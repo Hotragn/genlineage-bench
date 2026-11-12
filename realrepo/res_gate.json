@@ -1,0 +1,42 @@
+[
+ {
+  "repo": "pygments",
+  "file": "pygments/lexers/_mapping.py",
+  "edit": "'PythonLexer' -> 'PythonLexerX'",
+  "survives": false,
+  "expected": false,
+  "detail": "regeneration reverted: removed your line: 'PythonLexerX': ('pygments.lexers.python', 'Python', ('python', 'py', 'sage', 'python3', 'py3', 'bazel', 'starlark', '"
+ },
+ {
+  "repo": "pygments",
+  "file": "README.rst",
+  "edit": "Pygments -> Pygments!",
+  "survives": true,
+  "expected": true,
+  "detail": "edit preserved by regeneration"
+ },
+ {
+  "repo": "black",
+  "file": "src/black/resources/black.schema.json",
+  "edit": "\"integer\" -> \"number\"",
+  "survives": false,
+  "expected": false,
+  "detail": "regeneration reverted: removed your line: \"type\": \"number\",; restored: \"type\": \"integer\","
+ },
+ {
+  "repo": "grpc",
+  "file": "examples/python/helloworld/helloworld_pb2_grpc.py",
+  "edit": "SayHello -> SayHelo",
+  "survives": false,
+  "expected": false,
+  "detail": "regeneration reverted: removed your line: self.SayHelo = channel.unary_unary(; restored: self.SayHello = channel.unary_unary("
+ },
+ {
+  "repo": "grpc",
+  "file": "examples/python/helloworld/greeter_server.py",
+  "edit": "Hello -> Hi",
+  "survives": true,
+  "expected": true,
+  "detail": "edit preserved by regeneration"
+ }
+]

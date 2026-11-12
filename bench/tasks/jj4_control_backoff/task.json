@@ -1,0 +1,44 @@
+{
+ "id": "jj4_control_backoff",
+ "family": "jinja",
+ "split": "test",
+ "kind": "control",
+ "fix_locus": "hand",
+ "header": true,
+ "agents_md": true,
+ "issue": "The retry backoff schedule is off by one step: with 3 retries `retry.backoff_schedule()` should be [1, 2, 4] seconds but it starts at the wrong value. test_backoff fails. Please fix.",
+ "generated": [
+  "app/settings.py",
+  "app/flags.py"
+ ],
+ "sources": [
+  "config/settings.yaml",
+  "config/features.yaml",
+  "templates/settings.py.j2",
+  "templates/flags.py.j2"
+ ],
+ "generators": [
+  "tools/render.py"
+ ],
+ "ref_fix": {
+  "app/retry.py": [
+   [
+    "2 ** (i + 1)",
+    "2 ** i"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_retry.py": "e6a2922feb793dcbdcb86f138ae4d6dcc8090174945c12fef60fefb5a2e4c263"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "app/settings.py": [],
+  "app/flags.py": []
+ }
+}

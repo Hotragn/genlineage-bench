@@ -1,0 +1,192 @@
+[
+ {
+  "task": "rp1_pycparser_if_else",
+  "commands": [
+   "make gen"
+  ],
+  "declared_generated": [
+   "pycparser/c_ast.py"
+  ],
+  "outputs_found": [
+   "pycparser/c_ast.py"
+  ],
+  "all_found": true,
+  "extra_outputs": [],
+  "inputs": {
+   "pycparser/c_ast.py": [
+    "Makefile",
+    "pycparser/_ast_gen.py",
+    "pycparser/_c_ast.cfg"
+   ]
+  },
+  "line_map_entries": {},
+  "noisy_lines": {
+   "pycparser/c_ast.py": 0
+  },
+  "regen_runs": 62,
+  "seconds": 6.08,
+  "discovered_commands_for_reference": [
+   "make gen"
+  ]
+ },
+ {
+  "task": "rp2_pycparser_structref",
+  "commands": [
+   "make gen"
+  ],
+  "declared_generated": [
+   "pycparser/c_ast.py"
+  ],
+  "outputs_found": [
+   "pycparser/c_ast.py"
+  ],
+  "all_found": true,
+  "extra_outputs": [],
+  "inputs": {
+   "pycparser/c_ast.py": [
+    "Makefile",
+    "pycparser/_ast_gen.py",
+    "pycparser/_c_ast.cfg"
+   ]
+  },
+  "line_map_entries": {},
+  "noisy_lines": {
+   "pycparser/c_ast.py": 0
+  },
+  "regen_runs": 62,
+  "seconds": 4.83,
+  "discovered_commands_for_reference": [
+   "make gen"
+  ]
+ },
+ {
+  "task": "ry1_ytdlp_lazy_url",
+  "commands": [
+   "make gen"
+  ],
+  "declared_generated": [
+   "yt_dlp/extractor/lazy_extractors.py"
+  ],
+  "outputs_found": [
+   "yt_dlp/extractor/lazy_extractors.py"
+  ],
+  "all_found": true,
+  "extra_outputs": [],
+  "inputs": {
+   "yt_dlp/extractor/lazy_extractors.py": [
+    "Makefile",
+    "bundle/docker/linux/Dockerfile"
+   ]
+  },
+  "line_map_entries": {},
+  "noisy_lines": {
+   "yt_dlp/extractor/lazy_extractors.py": 0
+  },
+  "regen_runs": 72,
+  "seconds": 6978.53,
+  "discovered_commands_for_reference": [
+   "make gen"
+  ]
+ },
+ {
+  "task": "ry2_ytdlp_issue_template",
+  "commands": [
+   "make gen"
+  ],
+  "declared_generated": [
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/6_question.yml"
+  ],
+  "outputs_found": [
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/6_question.yml"
+  ],
+  "all_found": true,
+  "extra_outputs": [],
+  "inputs": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   ".github/ISSUE_TEMPLATE/6_question.yml": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ]
+  },
+  "line_map_entries": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": 39,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": 51,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": 47,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 28,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": 30,
+   ".github/ISSUE_TEMPLATE/6_question.yml": 36
+  },
+  "noisy_lines": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": 0,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 0,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/6_question.yml": 0
+  },
+  "regen_runs": 299,
+  "seconds": 113.15,
+  "discovered_commands_for_reference": [
+   "make gen"
+  ]
+ }
+]

@@ -1,0 +1,491 @@
+{
+ "pycparser_ast": {
+  "spec": "pycparser_ast",
+  "repo": "pycparser",
+  "commit": "3ec766b7cd94724cba714296509604597ea4ce4e",
+  "cmd": "python3 pycparser/_ast_gen.py && ruff format --no-cache pycparser/c_ast.py",
+  "rc": 0,
+  "written": [
+   "pycparser/c_ast.py"
+  ],
+  "gt_out": [
+   "pycparser/c_ast.py"
+  ],
+  "source": "Makefile target regen-ast (python3 pycparser/_ast_gen.py; make format = ruff 0.16.0 format); c_ast.py header 'automatically generated from _c_ast.cfg'",
+  "discovered_commands": [],
+  "committed": {
+   "pycparser/c_ast.py": true
+  },
+  "committed_equals_regen": {
+   "pycparser/c_ast.py": true
+  },
+  "committed_diff_lines": {
+   "pycparser/c_ast.py": 0
+  },
+  "line_map_sample": [
+   {
+    "input_line": 34,
+    "text": "ArrayDecl: [type*, dim*, dim_quals, attributes**=[]]",
+    "rc": 0,
+    "output_lines_changed": 30,
+    "first_output_lines": [
+     206,
+     207,
+     208,
+     209,
+     210
+    ]
+   },
+   {
+    "input_line": 46,
+    "text": "Alignas: [alignment*]",
+    "rc": 0,
+    "output_lines_changed": 20,
+    "first_output_lines": [
+     307,
+     308,
+     309,
+     310,
+     311
+    ]
+   },
+   {
+    "input_line": 50,
+    "text": "Attribute: [name, namespace, arguments]",
+    "rc": 0,
+    "output_lines_changed": 24,
+    "first_output_lines": [
+     327,
+     328,
+     329,
+     330,
+     331
+    ]
+   },
+   {
+    "input_line": 73,
+    "text": "Break: []",
+    "rc": 0,
+    "output_lines_changed": 16,
+    "first_output_lines": [
+     484,
+     485,
+     486,
+     487,
+     488
+    ]
+   },
+   {
+    "input_line": 82,
+    "text": "Compound: [block_items**]",
+    "rc": 0,
+    "output_lines_changed": 19,
+    "first_output_lines": [
+     551,
+     552,
+     553,
+     554,
+     555
+    ]
+   },
+   {
+    "input_line": 112,
+    "text": "DeclList: [decls**]",
+    "rc": 0,
+    "output_lines_changed": 19,
+    "first_output_lines": [
+     706,
+     707,
+     708,
+     709,
+     710
+    ]
+   },
+   {
+    "input_line": 114,
+    "text": "Default: [stmts**, attributes**=[]]",
+    "rc": 0,
+    "output_lines_changed": 23,
+    "first_output_lines": [
+     723,
+     724,
+     725,
+     726,
+     727
+    ]
+   },
+   {
+    "input_line": 132,
+    "text": "Enum: [name, values*, underlying_type*, attributes**=[]]",
+    "rc": 0,
+    "output_lines_changed": 37,
+    "first_output_lines": [
+     805,
+     806,
+     807,
+     808,
+     809
+    ]
+   },
+   {
+    "input_line": 160,
+    "text": "FuncCall: [name*, args*]",
+    "rc": 0,
+    "output_lines_changed": 25,
+    "first_output_lines": [
+     961,
+     962,
+     963,
+     964,
+     965
+    ]
+   },
+   {
+    "input_line": 183,
+    "text": "GenericSelection: [expr*, associations**]",
+    "rc": 0,
+    "output_lines_changed": 24,
+    "first_output_lines": [
+     1069,
+     1070,
+     1071,
+     1072,
+     1073
+    ]
+   },
+   {
+    "input_line": 194,
+    "text": "If: [cond*, iftrue*, iffalse*]",
+    "rc": 0,
+    "output_lines_changed": 30,
+    "first_output_lines": [
+     1147,
+     1148,
+     1149,
+     1150,
+     1151
+    ]
+   },
+   {
+    "input_line": 199,
+    "text": "InferredType: []",
+    "rc": 0,
+    "output_lines_changed": 16,
+    "first_output_lines": [
+     1177,
+     1178,
+     1179,
+     1180,
+     1181
+    ]
+   },
+   {
+    "input_line": 205,
+    "text": "Label: [name, stmt*, attributes**=[]]",
+    "rc": 0,
+    "output_lines_changed": 25,
+    "first_output_lines": [
+     1212,
+     1213,
+     1214,
+     1215,
+     1216
+    ]
+   },
+   {
+    "input_line": 217,
+    "text": "PtrDecl: [quals, type*, attributes**=[]]",
+    "rc": 0,
+    "output_lines_changed": 25,
+    "first_output_lines": [
+     1280,
+     1281,
+     1282,
+     1283,
+     1284
+    ]
+   },
+   {
+    "input_line": 219,
+    "text": "Return: [expr*]",
+    "rc": 0,
+    "output_lines_changed": 20,
+    "first_output_lines": [
+     1305,
+     1306,
+     1307,
+     1308,
+     1309
+    ]
+   },
+   {
+    "input_line": 236,
+    "text": "Switch: [cond*, stmt*]",
+    "rc": 0,
+    "output_lines_changed": 25,
+    "first_output_lines": [
+     1400,
+     1401,
+     1402,
+     1403,
+     1404
+    ]
+   },
+   {
+    "input_line": 240,
+    "text": "TernaryOp: [cond*, iftrue*, iffalse*]",
+    "rc": 0,
+    "output_lines_changed": 30,
+    "first_output_lines": [
+     1425,
+     1426,
+     1427,
+     1428,
+     1429
+    ]
+   },
+   {
+    "input_line": 249,
+    "text": "Typedef: [name, quals, storage, type*, attributes**=[]]",
+    "rc": 0,
+    "output_lines_changed": 39,
+    "first_output_lines": [
+     1494,
+     1495,
+     1496,
+     1497,
+     1498
+    ]
+   },
+   {
+    "input_line": 259,
+    "text": "UnaryOp: [op, expr*]",
+    "rc": 0,
+    "output_lines_changed": 21,
+    "first_output_lines": [
+     1585,
+     1586,
+     1587,
+     1588,
+     1589
+    ]
+   },
+   {
+    "input_line": 266,
+    "text": "While: [cond*, stmt*]",
+    "rc": 0,
+    "output_lines_changed": 25,
+    "first_output_lines": [
+     1630,
+     1631,
+     1632,
+     1633,
+     1634
+    ]
+   }
+  ],
+  "noise_lines": {
+   "pycparser/c_ast.py": 0
+  },
+  "n_declared": 2,
+  "sampled_declared": 2,
+  "declared_recall": "2/2",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {},
+  "declared_kinds": {
+   "pycparser/_ast_gen.py": "crash",
+   "pycparser/_c_ast.cfg": "crash"
+  },
+  "gate": [
+   {
+    "file": "pycparser/c_ast.py",
+    "edit": "'class FileAST(Node):' -> 'class FileAST(Node):  # hand edit'",
+    "verdict": "lost",
+    "expected": "lost"
+   },
+   {
+    "file": "pycparser/c_parser.py",
+    "edit": "'\\n' -> '\\n# hand edit\\n'",
+    "verdict": "kept",
+    "expected": "kept"
+   }
+  ],
+  "regen_runs": 66,
+  "seconds": 8.3,
+  "out_precision": "1/1",
+  "out_recall": "1/1"
+ },
+ "ytdlp_supportedsites": {
+  "spec": "ytdlp_supportedsites",
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "cmd": "python3 devscripts/make_supportedsites.py supportedsites.md",
+  "rc": 1,
+  "written": [],
+  "gt_out": [
+   "supportedsites.md"
+  ],
+  "source": "Makefile target supportedsites; generator imports every extractor in yt_dlp/extractor/",
+  "discovered_commands": [
+   "python devscripts/generate_aes_testdata.py",
+   "python devscripts/generate_third_party_licenses.py",
+   "python yt_dlp/extractor/generic.py",
+   "python yt_dlp/extractor/genericembeds.py",
+   "python yt_dlp/extractor/genius.py"
+  ],
+  "log": " from ._builtin.bun import BunJCP as _BunJCP  # noqa: F401\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/rr_esmj708z/r/yt_dlp/extractor/youtube/jsc/_builtin/bun.py\", line 9, in <module>\n    from yt_dlp.extractor.youtube.jsc._builtin.ejs import (\n    ...<6 lines>...\n    )\n  File \"/tmp/rr_esmj708z/r/yt_dlp/extractor/youtube/jsc/_builtin/ejs.py\", line 11, in <module>\n    from yt_dlp.extractor.youtube.jsc._builtin import vendor\nImportError: cannot import name 'vendor' from 'yt_dlp.extractor.youtube.jsc._builtin' (/tmp/rr_esmj708z/r/yt_dlp/extractor/youtube/jsc/_builtin/__init__.py)\n"
+ },
+ "ytdlp_issuetemplates": {
+  "spec": "ytdlp_issuetemplates",
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "cmd": "python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml .github/ISSUE_TEMPLATE/1_broken_site.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml .github/ISSUE_TEMPLATE/2_site_support_request.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml .github/ISSUE_TEMPLATE/3_site_feature_request.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml .github/ISSUE_TEMPLATE/4_bug_report.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml .github/ISSUE_TEMPLATE/5_feature_request.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/6_question.yml .github/ISSUE_TEMPLATE/6_question.yml",
+  "rc": 0,
+  "written": [
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/6_question.yml"
+  ],
+  "gt_out": [
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/6_question.yml"
+  ],
+  "source": "Makefile target issuetemplates (prerequisites list the _tmpl files, the script and yt_dlp/version.py)",
+  "discovered_commands": [
+   "python devscripts/generate_aes_testdata.py",
+   "python devscripts/generate_third_party_licenses.py",
+   "python yt_dlp/extractor/generic.py",
+   "python yt_dlp/extractor/genericembeds.py",
+   "python yt_dlp/extractor/genius.py"
+  ],
+  "committed": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": true,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": true,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": true,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/6_question.yml": true
+  },
+  "committed_equals_regen": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": true,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": true,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": true,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/6_question.yml": true
+  },
+  "committed_diff_lines": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": 0,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 0,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/6_question.yml": 0
+  },
+  "noise_lines": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": 0,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 0,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/6_question.yml": 0
+  },
+  "n_declared": 8,
+  "sampled_declared": 8,
+  "declared_recall": "7/8",
+  "missed_declared": [
+   "yt_dlp/version.py"
+  ],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {},
+  "declared_kinds": {
+   ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/6_question.yml": "crash",
+   "devscripts/make_issue_template.py": "crash",
+   "yt_dlp/version.py": "none"
+  },
+  "gate": [],
+  "regen_runs": 50,
+  "seconds": 24.4,
+  "out_precision": "6/6",
+  "out_recall": "6/6"
+ },
+ "ytdlp_readme": {
+  "spec": "ytdlp_readme",
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "cmd": "COLUMNS=80 python3 yt_dlp/__main__.py --ignore-config --help | python3 devscripts/make_readme.py",
+  "rc": 0,
+  "written": [
+   "README.md"
+  ],
+  "gt_out": [
+   "README.md"
+  ],
+  "source": "Makefile rule 'README.md: $(PY_CODE_FILES) devscripts/make_readme.py'; the script replaces only the options section of the hand-written README.md",
+  "discovered_commands": [
+   "python devscripts/generate_aes_testdata.py",
+   "python devscripts/generate_third_party_licenses.py",
+   "python yt_dlp/extractor/generic.py",
+   "python yt_dlp/extractor/genericembeds.py",
+   "python yt_dlp/extractor/genius.py"
+  ],
+  "committed": {
+   "README.md": true
+  },
+  "committed_equals_regen": {
+   "README.md": false
+  },
+  "committed_diff_lines": {
+   "README.md": 1
+  },
+  "noise_lines": {
+   "README.md": 0
+  },
+  "n_declared": 3,
+  "sampled_declared": 3,
+  "declared_recall": "3/3",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {
+   "yt_dlp/downloader/niconico.py": "crash",
+   "yt_dlp/postprocessor/sponsorblock.py": "crash",
+   "yt_dlp/utils/_utils.py": "crash"
+  },
+  "declared_kinds": {
+   "README.md": "crash",
+   "devscripts/make_readme.py": "crash",
+   "yt_dlp/options.py": "crash"
+  },
+  "gate": [
+   {
+    "file": "README.md",
+    "edit": "'Print program version and exit' -> 'Print program version and exit (hand edit)'",
+    "verdict": "lost",
+    "expected": "lost"
+   },
+   {
+    "file": "README.md",
+    "edit": "'# INSTALLATION' -> '# INSTALLATION (hand edit)'",
+    "verdict": "kept",
+    "expected": "kept"
+   }
+  ],
+  "regen_runs": 47,
+  "seconds": 30.9,
+  "out_precision": "1/1",
+  "out_recall": "1/1"
+ }
+}

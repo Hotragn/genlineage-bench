@@ -1,0 +1,10 @@
+entities:
+  - name: Product
+    fields:
+      - {name: sku, type: str}
+      - {name: price_cents, type: int}
+      - {name: currency, type: str, default: USD}
+  - name: Coupon
+    fields:
+      - {name: code, type: str}
+      - {name: percent_off, type: int}

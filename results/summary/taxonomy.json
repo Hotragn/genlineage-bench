@@ -1,0 +1,223 @@
+{
+ "k_12b|full": {
+  "n": 26,
+  "cats": {
+   "fail_no_edit": 3,
+   "durable": 22,
+   "fail_touched_upstream": 1
+  },
+  "tree_reward_paid": 22,
+  "paid_but_lost": 0
+ },
+ "k_12b|gate": {
+  "n": 26,
+  "cats": {
+   "fail_no_edit": 3,
+   "durable": 22,
+   "fail_touched_upstream": 1
+  },
+  "tree_reward_paid": 22,
+  "paid_but_lost": 0
+ },
+ "k_12b|headerguard": {
+  "n": 26,
+  "cats": {
+   "durable": 17,
+   "lost_generated_only": 4,
+   "fail_no_edit": 3,
+   "fail_touched_upstream": 2
+  },
+  "tree_reward_paid": 21,
+  "paid_but_lost": 4
+ },
+ "k_12b|hint": {
+  "n": 26,
+  "cats": {
+   "fail_no_edit": 4,
+   "durable": 18,
+   "lost_generated_only": 4
+  },
+  "tree_reward_paid": 22,
+  "paid_but_lost": 4
+ },
+ "k_12b|natural": {
+  "n": 25,
+  "cats": {
+   "durable": 14,
+   "lost_generated_only": 8,
+   "fail_no_edit": 2,
+   "fail_touched_upstream": 1
+  },
+  "tree_reward_paid": 22,
+  "paid_but_lost": 8
+ },
+ "k_e2b|full": {
+  "n": 26,
+  "cats": {
+   "durable": 19,
+   "fail_touched_upstream": 1,
+   "fail_no_edit": 1,
+   "fail_other_edit": 2,
+   "tamper": 3
+  },
+  "tree_reward_paid": 10,
+  "paid_but_lost": 0
+ },
+ "k_e2b|gate": {
+  "n": 26,
+  "cats": {
+   "durable": 16,
+   "fail_no_edit": 6,
+   "fail_other_edit": 2,
+   "tamper": 1,
+   "fail_touched_upstream": 1
+  },
+  "tree_reward_paid": 9,
+  "paid_but_lost": 0
+ },
+ "k_e2b|headerguard": {
+  "n": 26,
+  "cats": {
+   "lost_generated_only": 6,
+   "durable": 6,
+   "fail_no_edit": 5,
+   "fail_touched_upstream": 3,
+   "fail_other_edit": 3,
+   "tamper": 3
+  },
+  "tree_reward_paid": 9,
+  "paid_but_lost": 6
+ },
+ "k_e2b|hint": {
+  "n": 26,
+  "cats": {
+   "fail_other_edit": 4,
+   "fail_no_edit": 5,
+   "durable": 6,
+   "lost_generated_only": 8,
+   "tamper": 2,
+   "fail_touched_upstream": 1
+  },
+  "tree_reward_paid": 10,
+  "paid_but_lost": 8
+ },
+ "k_e2b|natural": {
+  "n": 26,
+  "cats": {
+   "lost_generated_only": 12,
+   "durable": 4,
+   "fail_touched_upstream": 4,
+   "fail_no_edit": 2,
+   "fail_other_edit": 3,
+   "tamper": 1
+  },
+  "tree_reward_paid": 13,
+  "paid_but_lost": 12
+ },
+ "k_e4b|full": {
+  "n": 35,
+  "cats": {
+   "durable": 30,
+   "tamper": 5
+  },
+  "tree_reward_paid": 24,
+  "paid_but_lost": 0
+ },
+ "k_e4b|gate": {
+  "n": 35,
+  "cats": {
+   "durable": 23,
+   "fail_no_edit": 7,
+   "fail_other_edit": 2,
+   "fail_touched_upstream": 1,
+   "tamper": 2
+  },
+  "tree_reward_paid": 18,
+  "paid_but_lost": 0
+ },
+ "k_e4b|headerguard": {
+  "n": 36,
+  "cats": {
+   "lost_generated_only": 12,
+   "durable": 14,
+   "fail_touched_upstream": 2,
+   "tamper": 6,
+   "fail_no_edit": 1,
+   "fail_other_edit": 1
+  },
+  "tree_reward_paid": 22,
+  "paid_but_lost": 12
+ },
+ "k_e4b|hint": {
+  "n": 36,
+  "cats": {
+   "lost_generated_only": 12,
+   "fail_no_edit": 5,
+   "durable": 15,
+   "lost_other": 1,
+   "tamper": 3
+  },
+  "tree_reward_paid": 24,
+  "paid_but_lost": 13
+ },
+ "k_e4b|lineage": {
+  "n": 35,
+  "cats": {
+   "lost_generated_only": 8,
+   "fail_no_edit": 8,
+   "durable": 17,
+   "fail_other_edit": 1,
+   "tamper": 1
+  },
+  "tree_reward_paid": 24,
+  "paid_but_lost": 8
+ },
+ "k_e4b|natural": {
+  "n": 36,
+  "cats": {
+   "lost_generated_only": 14,
+   "fail_no_edit": 4,
+   "durable": 11,
+   "tamper": 6,
+   "fail_other_edit": 1
+  },
+  "tree_reward_paid": 19,
+  "paid_but_lost": 14
+ },
+ "k_e4b|staticblock": {
+  "n": 36,
+  "cats": {
+   "durable": 23,
+   "fail_no_edit": 4,
+   "fail_touched_upstream": 3,
+   "tamper": 4,
+   "fail_other_edit": 2
+  },
+  "tree_reward_paid": 14,
+  "paid_but_lost": 0
+ },
+ "k_e4b|verify": {
+  "n": 36,
+  "cats": {
+   "lost_generated_only": 6,
+   "durable": 22,
+   "tamper": 6,
+   "lost_other": 1,
+   "fail_other_edit": 1
+  },
+  "tree_reward_paid": 22,
+  "paid_but_lost": 7
+ },
+ "k_e4b|verify_tests": {
+  "n": 36,
+  "cats": {
+   "lost_generated_only": 17,
+   "durable": 14,
+   "fail_no_edit": 1,
+   "fail_touched_upstream": 1,
+   "tamper": 3
+  },
+  "tree_reward_paid": 29,
+  "paid_but_lost": 17
+ }
+}

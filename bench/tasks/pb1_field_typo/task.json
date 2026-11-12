@@ -1,0 +1,48 @@
+{
+ "id": "pb1_field_typo",
+ "family": "protobuf",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": false,
+ "issue": "Creating users fails: `service.make_user(1, 'Ada', 'ada@example.com')` raises `ValueError: Protocol message User has no \"email\" field.` The test suite shows the failure. Please fix it.",
+ "generated": [
+  "gen/acct/v1/user_pb2.py",
+  "gen/acct/v1/team_pb2.py"
+ ],
+ "sources": [
+  "proto/acct/v1/user.proto",
+  "proto/acct/v1/team.proto"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "proto/acct/v1/user.proto": [
+   [
+    "string emial = 3;",
+    "string email = 3;"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "gen/acct/v1/user_pb2.py": [
+   [
+    "\\x65mial",
+    "\\x65mail"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_service.py": "d46e3420106fd894a54b1abd09531a85cd367945384b46d2622487d5e5f20cf7",
+  "tests/conftest_path.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "gen/acct/v1/user_pb2.py": [],
+  "gen/acct/v1/team_pb2.py": []
+ }
+}

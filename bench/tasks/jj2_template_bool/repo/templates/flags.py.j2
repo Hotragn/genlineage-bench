@@ -1,0 +1,10 @@
+# Feature flags.
+ENABLED = frozenset({
+{%- for f in features %}
+    {{ f | tojson }},
+{%- endfor %}
+})
+
+
+def is_enabled(name):
+    return name in ENABLED

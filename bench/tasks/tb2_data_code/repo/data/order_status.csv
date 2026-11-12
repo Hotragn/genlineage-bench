@@ -1,0 +1,6 @@
+name,code,terminal
+PENDING,10,no
+PAID,20,no
+SHIPPED,35,no
+DELIVERED,40,yes
+REFUNDED,50,yes

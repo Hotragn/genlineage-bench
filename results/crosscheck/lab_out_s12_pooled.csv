@@ -1,0 +1,9 @@
+base,base_dur,base_only,mean_diff,p_holm_primary,p_perm,pairs,treat,treat_dur,treat_only,units
+hint,56,6,0.2456,0.00026,0.00013,114,full,84,34,57
+headerguard,61,6,0.2018,0.000915,0.000915,114,full,84,29,57
+hint,56,7,0.2018,,0.00081,114,gate,79,30,57
+headerguard,61,8,0.1579,,0.00866,114,gate,79,26,57
+natural,51,3,0.2368,,8.5e-05,113,gate,78,30,57
+natural,51,4,0.2807,,3e-05,113,full,83,36,57
+natural,51,3,0.0877,,0.03964,113,headerguard,61,13,57
+natural,51,11,0.0439,,0.450645,113,hint,55,15,57

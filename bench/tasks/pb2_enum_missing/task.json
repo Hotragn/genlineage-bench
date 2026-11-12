@@ -1,0 +1,41 @@
+{
+ "id": "pb2_enum_missing",
+ "family": "protobuf",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": true,
+ "issue": "We added an auditor role in the product spec but the code does not know about it: `user_pb2.AUDITOR` raises AttributeError and test_auditor_role fails. AUDITOR should have the numeric value 3. Please fix.",
+ "generated": [
+  "gen/acct/v1/user_pb2.py",
+  "gen/acct/v1/team_pb2.py"
+ ],
+ "sources": [
+  "proto/acct/v1/user.proto",
+  "proto/acct/v1/team.proto"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "proto/acct/v1/user.proto": [
+   [
+    "  ADMIN = 2;",
+    "  ADMIN = 2;\n  AUDITOR = 3;"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_roles.py": "b02df9c111b68d0dee2379b973b81b469b518c1f0e2a0b0a28ec881203a73dda",
+  "tests/conftest_path.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "gen/acct/v1/user_pb2.py": [],
+  "gen/acct/v1/team_pb2.py": []
+ }
+}

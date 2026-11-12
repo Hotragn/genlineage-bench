@@ -1,0 +1,14 @@
+// Grammar for the rule language. The parser module calc/_parser.py is generated from this file.
+?start: expr
+?expr: expr "+" term   -> add
+     | expr "-" term   -> sub
+     | term
+?term: term "*" atom   -> mul
+     | term "/" atom   -> div
+     | atom
+?atom: NUMBER          -> num
+     | "true"          -> true
+     | "false"         -> false
+     | "(" expr ")"
+NUMBER: /[0-9]+(\.[0-9]+)?/
+%ignore " "

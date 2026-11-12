@@ -1,0 +1,378 @@
+{
+ "seed": 20261110,
+ "denominator_note": "PRs in AIDev-pop pull_request.parquet (v5) with >=1 row in pr_commit_details; merge commits excluded",
+ "per_agent": {
+  "Claude_Code": {
+   "prs_with_file_data": 171169,
+   "prs_touching_lockfile": 19948,
+   "touch_gen_any": 3935,
+   "touch_gen_path": 2855,
+   "touch_gen_header": 1863,
+   "edit_gen_any": 2939,
+   "edit_gen_nosrc": 1059,
+   "edit_gen_nosrc_path": 796,
+   "edit_gen_nosrc_header": 322,
+   "touch_gen_all_with_src": 2474,
+   "edit_gen_all_with_src": 1880,
+   "rate_touch_gen_any": 0.023,
+   "rate_edit_gen_any": 0.0172,
+   "rate_nosrc_among_edit_gen": 0.3603,
+   "rate_all_with_src_among_touch_gen": 0.6287,
+   "rate_all_with_src_among_edit_gen": 0.6397,
+   "merge_nosrc": {
+    "n": 1059,
+    "merged": 750,
+    "merge_rate": 0.7082,
+    "n_closed": 962,
+    "merge_rate_closed": 0.7796
+   },
+   "merge_edit_gen_with_src": {
+    "n": 1880,
+    "merged": 1307,
+    "merge_rate": 0.6952,
+    "n_closed": 1695,
+    "merge_rate_closed": 0.7711
+   },
+   "merge_no_gen": {
+    "n": 167234,
+    "merged": 120340,
+    "merge_rate": 0.7196,
+    "n_closed": 152273,
+    "merge_rate_closed": 0.7903
+   },
+   "merge_all": {
+    "n": 171169,
+    "merged": 123048,
+    "merge_rate": 0.7189,
+    "n_closed": 155814,
+    "merge_rate_closed": 0.7897
+   }
+  },
+  "Copilot": {
+   "prs_with_file_data": 98333,
+   "prs_touching_lockfile": 7991,
+   "touch_gen_any": 1894,
+   "touch_gen_path": 1058,
+   "touch_gen_header": 1110,
+   "edit_gen_any": 1064,
+   "edit_gen_nosrc": 423,
+   "edit_gen_nosrc_path": 288,
+   "edit_gen_nosrc_header": 159,
+   "touch_gen_all_with_src": 999,
+   "edit_gen_all_with_src": 641,
+   "rate_touch_gen_any": 0.0193,
+   "rate_edit_gen_any": 0.0108,
+   "rate_nosrc_among_edit_gen": 0.3976,
+   "rate_all_with_src_among_touch_gen": 0.5275,
+   "rate_all_with_src_among_edit_gen": 0.6024,
+   "merge_nosrc": {
+    "n": 423,
+    "merged": 249,
+    "merge_rate": 0.5887,
+    "n_closed": 377,
+    "merge_rate_closed": 0.6605
+   },
+   "merge_edit_gen_with_src": {
+    "n": 641,
+    "merged": 411,
+    "merge_rate": 0.6412,
+    "n_closed": 578,
+    "merge_rate_closed": 0.7111
+   },
+   "merge_no_gen": {
+    "n": 96439,
+    "merged": 58446,
+    "merge_rate": 0.606,
+    "n_closed": 88982,
+    "merge_rate_closed": 0.6568
+   },
+   "merge_all": {
+    "n": 98333,
+    "merged": 59607,
+    "merge_rate": 0.6062,
+    "n_closed": 90682,
+    "merge_rate_closed": 0.6573
+   }
+  },
+  "Cursor": {
+   "prs_with_file_data": 12885,
+   "prs_touching_lockfile": 1509,
+   "touch_gen_any": 253,
+   "touch_gen_path": 184,
+   "touch_gen_header": 99,
+   "edit_gen_any": 189,
+   "edit_gen_nosrc": 99,
+   "edit_gen_nosrc_path": 86,
+   "edit_gen_nosrc_header": 16,
+   "touch_gen_all_with_src": 131,
+   "edit_gen_all_with_src": 90,
+   "rate_touch_gen_any": 0.0196,
+   "rate_edit_gen_any": 0.0147,
+   "rate_nosrc_among_edit_gen": 0.5238,
+   "rate_all_with_src_among_touch_gen": 0.5178,
+   "rate_all_with_src_among_edit_gen": 0.4762,
+   "merge_nosrc": {
+    "n": 99,
+    "merged": 69,
+    "merge_rate": 0.697,
+    "n_closed": 91,
+    "merge_rate_closed": 0.7582
+   },
+   "merge_edit_gen_with_src": {
+    "n": 90,
+    "merged": 43,
+    "merge_rate": 0.4778,
+    "n_closed": 77,
+    "merge_rate_closed": 0.5584
+   },
+   "merge_no_gen": {
+    "n": 12632,
+    "merged": 7347,
+    "merge_rate": 0.5816,
+    "n_closed": 11441,
+    "merge_rate_closed": 0.6422
+   },
+   "merge_all": {
+    "n": 12885,
+    "merged": 7473,
+    "merge_rate": 0.58,
+    "n_closed": 11664,
+    "merge_rate_closed": 0.6407
+   }
+  },
+  "Devin": {
+   "prs_with_file_data": 11211,
+   "prs_touching_lockfile": 1472,
+   "touch_gen_any": 357,
+   "touch_gen_path": 241,
+   "touch_gen_header": 186,
+   "edit_gen_any": 216,
+   "edit_gen_nosrc": 128,
+   "edit_gen_nosrc_path": 121,
+   "edit_gen_nosrc_header": 19,
+   "touch_gen_all_with_src": 149,
+   "edit_gen_all_with_src": 88,
+   "rate_touch_gen_any": 0.0318,
+   "rate_edit_gen_any": 0.0193,
+   "rate_nosrc_among_edit_gen": 0.5926,
+   "rate_all_with_src_among_touch_gen": 0.4174,
+   "rate_all_with_src_among_edit_gen": 0.4074,
+   "merge_nosrc": {
+    "n": 128,
+    "merged": 89,
+    "merge_rate": 0.6953,
+    "n_closed": 128,
+    "merge_rate_closed": 0.6953
+   },
+   "merge_edit_gen_with_src": {
+    "n": 88,
+    "merged": 52,
+    "merge_rate": 0.5909,
+    "n_closed": 84,
+    "merge_rate_closed": 0.619
+   },
+   "merge_no_gen": {
+    "n": 10854,
+    "merged": 6364,
+    "merge_rate": 0.5863,
+    "n_closed": 10293,
+    "merge_rate_closed": 0.6183
+   },
+   "merge_all": {
+    "n": 11211,
+    "merged": 6592,
+    "merge_rate": 0.588,
+    "n_closed": 10642,
+    "merge_rate_closed": 0.6194
+   }
+  },
+  "Google_Jules": {
+   "prs_with_file_data": 3456,
+   "prs_touching_lockfile": 356,
+   "touch_gen_any": 39,
+   "touch_gen_path": 34,
+   "touch_gen_header": 19,
+   "edit_gen_any": 32,
+   "edit_gen_nosrc": 7,
+   "edit_gen_nosrc_path": 6,
+   "edit_gen_nosrc_header": 4,
+   "touch_gen_all_with_src": 28,
+   "edit_gen_all_with_src": 25,
+   "rate_touch_gen_any": 0.0113,
+   "rate_edit_gen_any": 0.0093,
+   "rate_nosrc_among_edit_gen": 0.2188,
+   "rate_all_with_src_among_touch_gen": 0.7179,
+   "rate_all_with_src_among_edit_gen": 0.7812,
+   "merge_nosrc": {
+    "n": 7,
+    "merged": 3,
+    "merge_rate": 0.4286,
+    "n_closed": 7,
+    "merge_rate_closed": 0.4286
+   },
+   "merge_edit_gen_with_src": {
+    "n": 25,
+    "merged": 10,
+    "merge_rate": 0.4,
+    "n_closed": 25,
+    "merge_rate_closed": 0.4
+   },
+   "merge_no_gen": {
+    "n": 3417,
+    "merged": 2058,
+    "merge_rate": 0.6023,
+    "n_closed": 3196,
+    "merge_rate_closed": 0.6439
+   },
+   "merge_all": {
+    "n": 3456,
+    "merged": 2074,
+    "merge_rate": 0.6001,
+    "n_closed": 3235,
+    "merge_rate_closed": 0.6411
+   }
+  },
+  "OpenAI_Codex": {
+   "prs_with_file_data": 62681,
+   "prs_touching_lockfile": 3140,
+   "touch_gen_any": 669,
+   "touch_gen_path": 456,
+   "touch_gen_header": 316,
+   "edit_gen_any": 525,
+   "edit_gen_nosrc": 267,
+   "edit_gen_nosrc_path": 206,
+   "edit_gen_nosrc_header": 70,
+   "touch_gen_all_with_src": 321,
+   "edit_gen_all_with_src": 258,
+   "rate_touch_gen_any": 0.0107,
+   "rate_edit_gen_any": 0.0084,
+   "rate_nosrc_among_edit_gen": 0.5086,
+   "rate_all_with_src_among_touch_gen": 0.4798,
+   "rate_all_with_src_among_edit_gen": 0.4914,
+   "merge_nosrc": {
+    "n": 267,
+    "merged": 166,
+    "merge_rate": 0.6217,
+    "n_closed": 234,
+    "merge_rate_closed": 0.7094
+   },
+   "merge_edit_gen_with_src": {
+    "n": 258,
+    "merged": 168,
+    "merge_rate": 0.6512,
+    "n_closed": 231,
+    "merge_rate_closed": 0.7273
+   },
+   "merge_no_gen": {
+    "n": 62012,
+    "merged": 46758,
+    "merge_rate": 0.754,
+    "n_closed": 58378,
+    "merge_rate_closed": 0.801
+   },
+   "merge_all": {
+    "n": 62681,
+    "merged": 47178,
+    "merge_rate": 0.7527,
+    "n_closed": 58971,
+    "merge_rate_closed": 0.8
+   }
+  },
+  "ALL": {
+   "prs_with_file_data": 359735,
+   "prs_touching_lockfile": 34416,
+   "touch_gen_any": 7147,
+   "touch_gen_path": 4828,
+   "touch_gen_header": 3593,
+   "edit_gen_any": 4965,
+   "edit_gen_nosrc": 1983,
+   "edit_gen_nosrc_path": 1503,
+   "edit_gen_nosrc_header": 590,
+   "touch_gen_all_with_src": 4102,
+   "edit_gen_all_with_src": 2982,
+   "rate_touch_gen_any": 0.0199,
+   "rate_edit_gen_any": 0.0138,
+   "rate_nosrc_among_edit_gen": 0.3994,
+   "rate_all_with_src_among_touch_gen": 0.5739,
+   "rate_all_with_src_among_edit_gen": 0.6006,
+   "merge_nosrc": {
+    "n": 1983,
+    "merged": 1326,
+    "merge_rate": 0.6687,
+    "n_closed": 1799,
+    "merge_rate_closed": 0.7371
+   },
+   "merge_edit_gen_with_src": {
+    "n": 2982,
+    "merged": 1991,
+    "merge_rate": 0.6677,
+    "n_closed": 2690,
+    "merge_rate_closed": 0.7401
+   },
+   "merge_no_gen": {
+    "n": 352588,
+    "merged": 241313,
+    "merge_rate": 0.6844,
+    "n_closed": 324563,
+    "merge_rate_closed": 0.7435
+   },
+   "merge_all": {
+    "n": 359735,
+    "merged": 245972,
+    "merge_rate": 0.6838,
+    "n_closed": 331008,
+    "merge_rate_closed": 0.7431
+   }
+  }
+ },
+ "all": {},
+ "pairs": {
+  "pairs": 72894,
+  "pairs_header": 32540,
+  "edited_pairs": 37318,
+  "edited_pairs_with_src": 23960,
+  "pairs_path": 34163,
+  "path_pairs": 40354,
+  "path_pairs_hdr_unknown": 27882,
+  "pairs_both": 6191,
+  "path_pairs_hdr_present": 6191,
+  "path_pairs_hdr_absent": 6281
+ },
+ "path_rule_counts": {
+  "generated_dir": 19464,
+  "dot_gen": 6900,
+  "protobuf_go": 3639,
+  "dart_build_runner": 2414,
+  "dot_generated": 2404,
+  "go_underscore_gen": 1417,
+  "dotnet_designer": 934,
+  "protobuf_js_ts": 841,
+  "protobuf_py": 749,
+  "k8s_zz_generated": 632,
+  "dotnet_g_cs": 540,
+  "sqlc_go": 380,
+  "protobuf_swift": 23,
+  "protobuf_cpp": 17
+ },
+ "path_rule_edited_nosrc": {
+  "generated_dir": 4308,
+  "dot_gen": 3635,
+  "header_only": 3201,
+  "dart_build_runner": 746,
+  "dot_generated": 712,
+  "go_underscore_gen": 311,
+  "protobuf_go": 249,
+  "dotnet_g_cs": 75,
+  "k8s_zz_generated": 32,
+  "protobuf_js_ts": 27,
+  "dotnet_designer": 23,
+  "protobuf_py": 19,
+  "protobuf_cpp": 11,
+  "sqlc_go": 5,
+  "protobuf_swift": 4
+ },
+ "distinct_repos_edit_gen_nosrc": 576,
+ "distinct_repos_edit_gen": 1075,
+ "audit_population_prs": 1983,
+ "header_sample_population_prs": 4828
+}

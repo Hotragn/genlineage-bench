@@ -1,0 +1,51 @@
+{
+ "task": "lk2_keyword_typo__L2",
+ "model": "g4-e4b-qat",
+ "cond": "natural",
+ "seed": 2,
+ "config": {
+  "temperature": 0.7,
+  "num_ctx": 16384,
+  "num_predict": 2048,
+  "think": false,
+  "max_steps": 25,
+  "max_nudges": 2,
+  "max_tool_out": 4000,
+  "max_verify_rounds": 2
+ },
+ "edits": [],
+ "commands": [],
+ "shell_changes": [],
+ "blocked_writes": [],
+ "turns": [],
+ "verify_rounds": [],
+ "steps": 1,
+ "nudges": 0,
+ "stop": "api_error: HTTP Error 500: Internal Server Error",
+ "tool_calls": 0,
+ "prompt_tokens": 0,
+ "gen_tokens": 0,
+ "wall_s": 6.4,
+ "guard_events": [],
+ "lineage_seconds": null,
+ "score": {
+  "changed_files": {},
+  "tampered_tests": false,
+  "hand_edited": {},
+  "hand_edited_generated": false,
+  "hand_edited_upstream": false,
+  "hand_edited_hand": false,
+  "hand_edited_generator": false,
+  "build_tampered": false,
+  "immediate_pass": false,
+  "regen_ok": true,
+  "regen_rewrote": [
+   "calc/_parser.py"
+  ],
+  "durable_pass": false,
+  "root_cause_fixed": false,
+  "immediate_tail": "ex_state.last_token],\n                               state=parser_state, terminals_by_name=self.terminals_by_name)\ncalc._parser.UnexpectedCharacters: No terminal matches 't' in the current parser context, at line 1 col 1\n\ntrue + 1\n^\nExpected one of: \n\t* TURE\n\t* FALSE\n\t* NUMBER\n\t* LPAR\n\n\n----------------------------------------------------------------------\nRan 2 tests in 0.007s\n\nFAILED (errors=1)\n",
+  "durable_tail": "ex_state.last_token],\n                               state=parser_state, terminals_by_name=self.terminals_by_name)\ncalc._parser.UnexpectedCharacters: No terminal matches 't' in the current parser context, at line 1 col 1\n\ntrue + 1\n^\nExpected one of: \n\t* TURE\n\t* FALSE\n\t* NUMBER\n\t* LPAR\n\n\n----------------------------------------------------------------------\nRan 2 tests in 0.007s\n\nFAILED (errors=1)\n",
+  "regen_tail": "python -m lark.tools.standalone calc/grammar.lark > calc/_parser.py\n"
+ }
+}

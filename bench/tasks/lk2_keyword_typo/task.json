@@ -1,0 +1,51 @@
+{
+ "id": "lk2_keyword_typo",
+ "family": "lark",
+ "regen_nondeterministic": true,
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": true,
+ "issue": "The boolean literal `true` does not parse: `evaluate('true + 1')` raises UnexpectedCharacters, while `false` works. test_true_literal fails. Please fix.",
+ "generated": [
+  "calc/_parser.py"
+ ],
+ "sources": [
+  "calc/grammar.lark"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "calc/grammar.lark": [
+   [
+    "\"ture\"",
+    "\"true\""
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "calc/_parser.py": [
+   [
+    "'value': 'ture'",
+    "'value': 'true'"
+   ],
+   [
+    "'raw': '\"ture\"'",
+    "'raw': '\"true\"'"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_eval.py": "fc29e8bece957e93ca56effc4c8ab0ca762908d881fd71670d3408f13481dcfd"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "calc/_parser.py": [
+   3563
+  ]
+ }
+}

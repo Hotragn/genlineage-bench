@@ -1,0 +1,281 @@
+{
+ "directed": true,
+ "multigraph": true,
+ "graph": {
+  "name": "lk2_keyword_typo",
+  "commands": [
+   "make gen"
+  ],
+  "inference_seconds": 4.49,
+  "regen_runs": 19
+ },
+ "nodes": [
+  {
+   "id": "file:calc/_parser.py",
+   "kind": "file",
+   "path": "calc/_parser.py",
+   "role": "output",
+   "noisy_lines": 0
+  },
+  {
+   "id": "cmd:make gen",
+   "kind": "command",
+   "command": "make gen"
+  },
+  {
+   "id": "file:Makefile",
+   "kind": "file",
+   "path": "Makefile",
+   "role": "build"
+  },
+  {
+   "id": "file:calc/evaluate.py",
+   "kind": "file",
+   "path": "calc/evaluate.py",
+   "role": "generator"
+  },
+  {
+   "id": "file:calc/grammar.lark",
+   "kind": "file",
+   "path": "calc/grammar.lark",
+   "role": "input"
+  },
+  {
+   "id": "line:calc/grammar.lark:1",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 1,
+   "text": "// Grammar for the rule language. The parser module calc/_parser.py is generated"
+  },
+  {
+   "id": "line:calc/_parser.py:3564",
+   "kind": "line",
+   "path": "calc/_parser.py",
+   "line": 3564
+  },
+  {
+   "id": "line:calc/grammar.lark:4",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 4,
+   "text": "| expr \"-\" term   -> sub"
+  },
+  {
+   "id": "line:calc/_parser.py:3567",
+   "kind": "line",
+   "path": "calc/_parser.py",
+   "line": 3567
+  },
+  {
+   "id": "line:calc/grammar.lark:5",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 5,
+   "text": "| term"
+  },
+  {
+   "id": "line:calc/grammar.lark:7",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 7,
+   "text": "| term \"/\" atom   -> div"
+  },
+  {
+   "id": "line:calc/grammar.lark:8",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 8,
+   "text": "| atom"
+  },
+  {
+   "id": "line:calc/grammar.lark:10",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 10,
+   "text": "| \"ture\"          -> true"
+  },
+  {
+   "id": "line:calc/grammar.lark:11",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 11,
+   "text": "| \"false\"         -> false"
+  },
+  {
+   "id": "line:calc/grammar.lark:12",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 12,
+   "text": "| \"(\" expr \")\""
+  },
+  {
+   "id": "line:calc/grammar.lark:14",
+   "kind": "line",
+   "path": "calc/grammar.lark",
+   "line": 14,
+   "text": "%ignore \" \""
+  }
+ ],
+ "links": [
+  {
+   "source": "file:calc/_parser.py",
+   "target": "cmd:make gen",
+   "type": "produced_by"
+  },
+  {
+   "source": "file:calc/_parser.py",
+   "target": "file:Makefile",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:calc/_parser.py",
+   "target": "file:calc/evaluate.py",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:calc/_parser.py",
+   "target": "file:calc/grammar.lark",
+   "type": "generated_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:1",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "file:calc/_parser.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:1",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:4",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:4",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "file:calc/_parser.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:4",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:5",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:5",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:5",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:7",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:8",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:8",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:8",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:10",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:10",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:10",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:11",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:11",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:11",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:12",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/grammar.lark:14",
+   "target": "file:calc/grammar.lark",
+   "type": "part_of"
+  },
+  {
+   "source": "line:calc/_parser.py:3564",
+   "target": "line:calc/grammar.lark:14",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:calc/_parser.py:3567",
+   "target": "line:calc/grammar.lark:14",
+   "type": "derived_from"
+  }
+ ]
+}

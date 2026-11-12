@@ -1,0 +1,34 @@
+openapi: 3.0.3
+info:
+  title: Billing
+  version: 1.4.0
+paths: {}
+components:
+  schemas:
+    Status:
+      type: string
+      enum: [active, suspended]
+    Account:
+      type: object
+      required: [id, username]
+      properties:
+        id:
+          type: integer
+        username:
+          type: string
+          maxLength: 32
+        email:
+          type: string
+        status:
+          $ref: '#/components/schemas/Status'
+    Invoice:
+      type: object
+      required: [id, account_id, amount_cents]
+      properties:
+        id:
+          type: integer
+        account_id:
+          type: integer
+        amount_cents:
+          type: integer
+          minimum: 0

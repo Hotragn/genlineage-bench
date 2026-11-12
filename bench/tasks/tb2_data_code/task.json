@@ -1,0 +1,46 @@
+{
+ "id": "tb2_data_code",
+ "family": "table",
+ "split": "dev",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": false,
+ "agents_md": true,
+ "issue": "Partner systems send status code 30 for shipped orders, but `OrderStatus(30)` raises ValueError in our library. test_shipped_code fails. Please fix.",
+ "generated": [
+  "orders/status.py"
+ ],
+ "sources": [
+  "data/order_status.csv"
+ ],
+ "generators": [
+  "scripts/gen_status.py"
+ ],
+ "ref_fix": {
+  "data/order_status.csv": [
+   [
+    "SHIPPED,35",
+    "SHIPPED,30"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "orders/status.py": [
+   [
+    "SHIPPED = 35",
+    "SHIPPED = 30"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_status.py": "ca3d5d2146b57d55bd44914d75f2b76f8d8b4f74bb6b9e19c386e4e530eb528c"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "orders/status.py": []
+ }
+}

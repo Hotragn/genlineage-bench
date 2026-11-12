@@ -1,0 +1,74 @@
+{
+ "id": "rp1_pycparser_if_else",
+ "family": "pycparser-astgen",
+ "split": "real",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": false,
+ "issue": "pycparser's c_ast.NodeVisitor never visits the `else` branch of an `if` statement: a visitor that collects function calls finds `a` but not `b` in `void f(int x) { if (x) a(); else b(); }`. test_visitor_visits_else_branch fails. Please fix.",
+ "generated": [
+  "pycparser/c_ast.py"
+ ],
+ "sources": [
+  "pycparser/_c_ast.cfg"
+ ],
+ "generators": [
+  "pycparser/_ast_gen.py"
+ ],
+ "ref_fix": {
+  "pycparser/_c_ast.cfg": [
+   [
+    "\nIf: [cond*, iftrue*, iffalse]",
+    "\nIf: [cond*, iftrue*, iffalse*]"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "lineage_commands": [
+  "make gen"
+ ],
+ "upstream": {
+  "repo": "pycparser",
+  "commit": "3ec766b7cd94724cba714296509604597ea4ce4e",
+  "trimmed": [
+   "tests/README.txt",
+   "tests/c_files",
+   "tests/test_c23_attributes.py",
+   "tests/test_c_generator.py",
+   "tests/test_c_lexer.py",
+   "tests/test_c_parser.py",
+   "tests/test_examples.py",
+   "tests/test_general.py",
+   "tests/test_util.py"
+  ],
+  "clean_regen_changed": [],
+  "bug_regen_changed": [
+   "pycparser/c_ast.py"
+  ],
+  "makefile": "real Makefile + appended `gen:` target"
+ },
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_c_ast.py": "3b7e84f3be56754e5529c458adc25c7560ad59c2422d8985f4ba6d892077c0e5",
+  "tests/test_issue_else.py": "7d0f91ca2ca459da02884f31893628b094de54d0157ecfc707def2e74bc001bb"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "pycparser/c_ast.py": []
+ },
+ "gen_only_fix": {
+  "pycparser/c_ast.py": [
+   [
+    "        if self.iftrue is not None:\n            nodelist.append((\"iftrue\", self.iftrue))\n        return tuple(nodelist)\n\n",
+    "        if self.iftrue is not None:\n            nodelist.append((\"iftrue\", self.iftrue))\n        if self.iffalse is not None:\n            nodelist.append((\"iffalse\", self.iffalse))\n        return tuple(nodelist)\n\n"
+   ],
+   [
+    "        if self.iftrue is not None:\n            yield self.iftrue\n\n    attr_names = (\"iffalse\",)\n\n\n",
+    "        if self.iftrue is not None:\n            yield self.iftrue\n        if self.iffalse is not None:\n            yield self.iffalse\n\n    attr_names = ()\n\n\n"
+   ]
+  ]
+ }
+}

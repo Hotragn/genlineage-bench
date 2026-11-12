@@ -1,0 +1,40 @@
+{
+ "id": "lk3_control_div",
+ "family": "lark",
+ "regen_nondeterministic": true,
+ "split": "test",
+ "kind": "control",
+ "fix_locus": "hand",
+ "header": true,
+ "agents_md": false,
+ "issue": "Subtraction gives the wrong sign: `evaluate('10 - 4')` returns -6.0 instead of 6.0. test_sub fails. Please fix.",
+ "generated": [
+  "calc/_parser.py"
+ ],
+ "sources": [
+  "calc/grammar.lark"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "calc/evaluate.py": [
+   [
+    "return t[1] - t[0]",
+    "return t[0] - t[1]"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_eval.py": "5aa4db02d719f40d74cdef065557f52c91aaaed2ae8b2003df60534a2e734a03"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "calc/_parser.py": [
+   3563
+  ]
+ }
+}

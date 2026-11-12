@@ -1,0 +1,10 @@
+{
+ "rows": 12116310,
+ "merge_rows": 0,
+ "null_patch": 1596792,
+ "flagged": 393861,
+ "pass1_seconds": 335.9,
+ "prs_with_file_data": 359735,
+ "prs_flagged_generated": 17060,
+ "pass2_seconds": 19.7
+}

@@ -1,0 +1,219 @@
+[{"stream_name":"stderr","time":0.62436859,"data":"/kaggle/src/script.py:6: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.624421155,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(BUNDLE))).extractall(W)\n"}
+,{"stream_name":"stdout","time":0.787146946,"data":"$ nvidia-smi --query-gpu=name,memory.total --format=csv; python --version \n"}
+,{"stream_name":"stdout","time":0.78718651,"data":" name, memory.total [MiB]\n"}
+,{"stream_name":"stdout","time":0.787191808,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":0.78721166,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":0.78721543,"data":"Python 3.13.16\n"}
+,{"stream_name":"stdout","time":0.787219314,"data":" \n"}
+,{"stream_name":"stdout","time":7.448243689,"data":"$ pip install -q uv \u0026\u0026 uv venv /kaggle/working/venv --python 3.13 \u0026\u0026 uv pip install -q --python /kaggle/working/venv/bin/python -r /kaggle/working/gl/genlineage/requirements.txt \u0026\u0026 uv pip freeze --python /kaggle/working/venv/bin/python | grep -iE 'grpc|protobuf|datamodel|lark|jinja|black|isort|pydantic' \n"}
+,{"stream_name":"stdout","time":7.448290375,"data":" black==26.10.1\n"}
+,{"stream_name":"stdout","time":7.4482959300000005,"data":"datamodel-code-generator==0.92.0\n"}
+,{"stream_name":"stdout","time":7.448300684,"data":"grpcio==1.85.1\n"}
+,{"stream_name":"stdout","time":7.448305167,"data":"grpcio-tools==1.85.1\n"}
+,{"stream_name":"stdout","time":7.448309558,"data":"isort==8.0.1\n"}
+,{"stream_name":"stdout","time":7.448314157,"data":"jinja2==3.1.6\n"}
+,{"stream_name":"stdout","time":7.448320505,"data":"lark==1.3.1\n"}
+,{"stream_name":"stdout","time":7.448328811,"data":"protobuf==7.36.2\n"}
+,{"stream_name":"stdout","time":7.44833186,"data":"pydantic==2.14.3\n"}
+,{"stream_name":"stdout","time":7.4483349,"data":"pydantic-core==2.50.4\n"}
+,{"stream_name":"stdout","time":7.448338061,"data":" warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?\n"}
+,{"stream_name":"stdout","time":7.448341524,"data":"Using CPython 3.13.16 interpreter at: /usr/bin/python3\n"}
+,{"stream_name":"stdout","time":7.448344824,"data":"Creating virtual environment at: venv\n"}
+,{"stream_name":"stdout","time":7.44834804,"data":"Activate with: source venv/bin/activate\n"}
+,{"stream_name":"stdout","time":7.448351202,"data":"Using Python 3.13.16 environment at: venv\n"}
+,{"stream_name":"stdout","time":7.448354464,"data":"\n"}
+,{"stream_name":"stdout","time":83.912428478,"data":"$ cd /kaggle/working/gl \u0026\u0026 /kaggle/working/venv/bin/python bench/build.py --validate-only 2\u003e\u00261 | tail -1 \n"}
+,{"stream_name":"stdout","time":83.912457941,"data":" VALIDATE ALL OK\n"}
+,{"stream_name":"stdout","time":83.91246431,"data":" \n"}
+,{"stream_name":"stdout","time":108.01683485,"data":"$ (command -v zstd || apt-get install -y zstd) \u003e/dev/null 2\u003e\u00261; curl -fsSL https://ollama.com/install.sh | sh \u003e/tmp/inst.log 2\u003e\u00261; tail -2 /tmp/inst.log; ollama --version \n"}
+,{"stream_name":"stdout","time":108.016880234,"data":" \u003e\u003e\u003e The Ollama API is now available at 127.0.0.1:11434.\n"}
+,{"stream_name":"stdout","time":108.01688993,"data":"\u003e\u003e\u003e Install complete. Run \"ollama\" from the command line.\n"}
+,{"stream_name":"stdout","time":108.016898058,"data":"Warning: could not connect to a running Ollama instance\n"}
+,{"stream_name":"stdout","time":108.016905695,"data":"Warning: client version is 0.40.16\n"}
+,{"stream_name":"stdout","time":108.016936333,"data":" \n"}
+,{"stream_name":"stdout","time":178.046975145,"data":"$ OLLAMA_HOST=127.0.0.1:11434 ollama pull gemma4:12b-it-qat \u003e/tmp/pull.log 2\u003e\u00261; tail -c 200 /tmp/pull.log \n"}
+,{"stream_name":"stdout","time":178.047009402,"data":" K\n"}
+,{"stream_name":"stdout","time":178.047014951,"data":"pulling c014a34eec1b: 100% ▕██████████████████▏  546 B                         \u001b[K\n"}
+,{"stream_name":"stdout","time":178.047023904,"data":"verifying sha256 digest \u001b[K\n"}
+,{"stream_name":"stdout","time":178.047028814,"data":"writing manifest \u001b[K\n"}
+,{"stream_name":"stdout","time":178.047034652,"data":"success \u001b[K\u001b[?25h\u001b[?2026l\n"}
+,{"stream_name":"stdout","time":178.047039602,"data":" \n"}
+,{"stream_name":"stdout","time":178.047043988,"data":"pulled gemma4:12b-it-qat 60 s\n"}
+,{"stream_name":"stdout","time":213.732494312,"data":"$ OLLAMA_HOST=127.0.0.1:11434 ollama pull gemma4:e2b-it-qat \u003e/tmp/pull.log 2\u003e\u00261; tail -c 200 /tmp/pull.log \n"}
+,{"stream_name":"stdout","time":213.732523542,"data":" K\n"}
+,{"stream_name":"stdout","time":213.732530248,"data":"pulling e382105d2ac3: 100% ▕██████████████████▏  545 B                         \u001b[K\n"}
+,{"stream_name":"stdout","time":213.732536926,"data":"verifying sha256 digest \u001b[K\n"}
+,{"stream_name":"stdout","time":213.732541592,"data":"writing manifest \u001b[K\n"}
+,{"stream_name":"stdout","time":213.732546063,"data":"success \u001b[K\u001b[?25h\u001b[?2026l\n"}
+,{"stream_name":"stdout","time":213.73255071,"data":" \n"}
+,{"stream_name":"stdout","time":213.73255503,"data":"pulled gemma4:e2b-it-qat 36 s\n"}
+,{"stream_name":"stdout","time":266.187353159,"data":"$ OLLAMA_HOST=127.0.0.1:11434 ollama pull gemma4:e4b-it-qat \u003e/tmp/pull.log 2\u003e\u00261; tail -c 200 /tmp/pull.log \n"}
+,{"stream_name":"stdout","time":266.187390726,"data":" K\n"}
+,{"stream_name":"stdout","time":266.187420975,"data":"pulling e3b14aa7ca02: 100% ▕██████████████████▏  545 B                         \u001b[K\n"}
+,{"stream_name":"stdout","time":266.187427041,"data":"verifying sha256 digest \u001b[K\n"}
+,{"stream_name":"stdout","time":266.187431645,"data":"writing manifest \u001b[K\n"}
+,{"stream_name":"stdout","time":266.187435973,"data":"success \u001b[K\u001b[?25h\u001b[?2026l\n"}
+,{"stream_name":"stdout","time":266.187440729,"data":" \n"}
+,{"stream_name":"stdout","time":266.187446717,"data":"pulled gemma4:e4b-it-qat 52 s\n"}
+,{"stream_name":"stdout","time":266.709770185,"data":"$ OLLAMA_HOST=127.0.0.1:11434 ollama list \n"}
+,{"stream_name":"stdout","time":266.709814128,"data":" NAME                 ID              SIZE      MODIFIED               \n"}
+,{"stream_name":"stdout","time":266.709820877,"data":"gemma4:e4b-it-qat    ee6656371218    6.1 GB    Less than a second ago    \n"}
+,{"stream_name":"stdout","time":266.709825725,"data":"gemma4:e2b-it-qat    07ea59a47401    4.3 GB    52 seconds ago            \n"}
+,{"stream_name":"stdout","time":266.709830254,"data":"gemma4:12b-it-qat    38044be4f923    7.2 GB    About a minute ago        \n"}
+,{"stream_name":"stdout","time":266.709835052,"data":" \n"}
+,{"stream_name":"stdout","time":866.782264639,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":866.784072981,"data":"      12 k_12b\n"}
+,{"stream_name":"stdout","time":866.784082907,"data":"     11 k_e4b\n"}
+,{"stream_name":"stdout","time":866.784087541,"data":" \n"}
+,{"stream_name":"stdout","time":1466.862099187,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":1466.862580838,"data":"      21 k_12b\n"}
+,{"stream_name":"stdout","time":1466.862596181,"data":"     23 k_e4b\n"}
+,{"stream_name":"stdout","time":1466.862601922,"data":" \n"}
+,{"stream_name":"stdout","time":2066.951796687,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":2066.951836379,"data":"      38 k_12b\n"}
+,{"stream_name":"stdout","time":2066.951842623,"data":"     40 k_e4b\n"}
+,{"stream_name":"stdout","time":2066.951846867,"data":" \n"}
+,{"stream_name":"stdout","time":2667.066658037,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":2667.066722373,"data":"      52 k_12b\n"}
+,{"stream_name":"stdout","time":2667.066728494,"data":"     53 k_e4b\n"}
+,{"stream_name":"stdout","time":2667.066755381,"data":" \n"}
+,{"stream_name":"stdout","time":3267.198954743,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":3267.199066653,"data":"      58 k_12b\n"}
+,{"stream_name":"stdout","time":3267.199074137,"data":"     73 k_e4b\n"}
+,{"stream_name":"stdout","time":3267.199078691,"data":" \n"}
+,{"stream_name":"stdout","time":3867.366096768,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":3867.366294456,"data":"      76 k_12b\n"}
+,{"stream_name":"stdout","time":3867.366303278,"data":"     90 k_e4b\n"}
+,{"stream_name":"stdout","time":3867.368313564,"data":" \n"}
+,{"stream_name":"stdout","time":4467.533805237,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":4467.533843406,"data":"      90 k_12b\n"}
+,{"stream_name":"stdout","time":4467.533848714,"data":"    103 k_e4b\n"}
+,{"stream_name":"stdout","time":4467.533852976,"data":" \n"}
+,{"stream_name":"stdout","time":4776.60004263,"data":"lane gpu1 done k_12b 4510 s\n"}
+,{"stream_name":"stdout","time":5067.832256732,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":5067.832323714,"data":"      95 k_12b\n"}
+,{"stream_name":"stdout","time":5067.832330218,"data":"     10 k_e2b\n"}
+,{"stream_name":"stdout","time":5067.832335144,"data":"    113 k_e4b\n"}
+,{"stream_name":"stdout","time":5067.832365429,"data":" \n"}
+,{"stream_name":"stdout","time":5668.182518971,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":5668.182731175,"data":"      95 k_12b\n"}
+,{"stream_name":"stdout","time":5668.182740976,"data":"     33 k_e2b\n"}
+,{"stream_name":"stdout","time":5668.182745509,"data":"    129 k_e4b\n"}
+,{"stream_name":"stdout","time":5668.182883298,"data":" \n"}
+,{"stream_name":"stdout","time":6268.469390459,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":6268.469445101,"data":"      95 k_12b\n"}
+,{"stream_name":"stdout","time":6268.469451061,"data":"     49 k_e2b\n"}
+,{"stream_name":"stdout","time":6268.469455198,"data":"    156 k_e4b\n"}
+,{"stream_name":"stdout","time":6268.469474729,"data":" \n"}
+,{"stream_name":"stdout","time":6747.403650145,"data":"lane gpu0 done k_e4b 6481 s\n"}
+,{"stream_name":"stdout","time":6868.826688822,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":6868.826728809,"data":"      95 k_12b\n"}
+,{"stream_name":"stdout","time":6868.826734428,"data":"     65 k_e2b\n"}
+,{"stream_name":"stdout","time":6868.826738854,"data":"    173 k_e4b\n"}
+,{"stream_name":"stdout","time":6868.826743414,"data":" \n"}
+,{"stream_name":"stdout","time":7374.293551277,"data":"lane gpu1 done k_e2b 2597 s\n"}
+,{"stream_name":"stdout","time":7469.365039028,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":7469.368246332,"data":"      97 k_12b\n"}
+,{"stream_name":"stdout","time":7469.368260582,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":7469.368265362,"data":"    191 k_e4b\n"}
+,{"stream_name":"stdout","time":7469.368269612,"data":" \n"}
+,{"stream_name":"stdout","time":8070.002386373,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":8070.005092701,"data":"     110 k_12b\n"}
+,{"stream_name":"stdout","time":8070.005107718,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":8070.005112123,"data":"    208 k_e4b\n"}
+,{"stream_name":"stdout","time":8070.005116097,"data":" \n"}
+,{"stream_name":"stdout","time":8670.695363811,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":8670.695400686,"data":"     126 k_12b\n"}
+,{"stream_name":"stdout","time":8670.695405853,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":8670.695410088,"data":"    219 k_e4b\n"}
+,{"stream_name":"stdout","time":8670.695414412,"data":" \n"}
+,{"stream_name":"stdout","time":9271.482391899,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":9271.482440026,"data":"     143 k_12b\n"}
+,{"stream_name":"stdout","time":9271.482445404,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":9271.482449682,"data":"    230 k_e4b\n"}
+,{"stream_name":"stdout","time":9271.48245388,"data":" \n"}
+,{"stream_name":"stdout","time":9871.979494918,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":9871.979544218,"data":"     153 k_12b\n"}
+,{"stream_name":"stdout","time":9871.97955002,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":9871.979554658,"data":"    248 k_e4b\n"}
+,{"stream_name":"stdout","time":9871.979558921,"data":" \n"}
+,{"stream_name":"stdout","time":10472.581789536,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":10472.581826986,"data":"     167 k_12b\n"}
+,{"stream_name":"stdout","time":10472.581832666,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":10472.581837462,"data":"    264 k_e4b\n"}
+,{"stream_name":"stdout","time":10472.581841991,"data":" \n"}
+,{"stream_name":"stdout","time":11073.159791278,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":11073.160443313,"data":"     186 k_12b\n"}
+,{"stream_name":"stdout","time":11073.160479316,"data":"     95 k_e2b\n"}
+,{"stream_name":"stdout","time":11073.160502236,"data":"    278 k_e4b\n"}
+,{"stream_name":"stdout","time":11073.160506702,"data":" \n"}
+,{"stream_name":"stdout","time":11601.06927042,"data":"lane gpu1 done k_12b 4226 s\n"}
+,{"stream_name":"stdout","time":11673.867265647,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":11673.867479859,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":11673.867507146,"data":"     97 k_e2b\n"}
+,{"stream_name":"stdout","time":11673.867511637,"data":"    294 k_e4b\n"}
+,{"stream_name":"stdout","time":11673.86765248,"data":" \n"}
+,{"stream_name":"stdout","time":12274.538487218,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":12274.538718695,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":12274.538727767,"data":"    130 k_e2b\n"}
+,{"stream_name":"stdout","time":12274.538732323,"data":"    323 k_e4b\n"}
+,{"stream_name":"stdout","time":12274.538924115,"data":" \n"}
+,{"stream_name":"stdout","time":12720.970332765,"data":"lane gpu0 done k_e4b 5973 s\n"}
+,{"stream_name":"stdout","time":12875.193278724,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":12875.193324762,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":12875.193330644,"data":"    148 k_e2b\n"}
+,{"stream_name":"stdout","time":12875.193335161,"data":"    345 k_e4b\n"}
+,{"stream_name":"stdout","time":12875.193339502,"data":" \n"}
+,{"stream_name":"stdout","time":13475.780168082,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":13475.780225226,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":13475.780231036,"data":"    173 k_e2b\n"}
+,{"stream_name":"stdout","time":13475.780235427,"data":"    356 k_e4b\n"}
+,{"stream_name":"stdout","time":13475.780239666,"data":" \n"}
+,{"stream_name":"stdout","time":13735.363248114,"data":"lane gpu1 done k_e2b 2134 s\n"}
+,{"stream_name":"stdout","time":14076.583597086,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":14076.583646569,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":14076.583651737,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":14076.583655418,"data":"    377 k_e4b\n"}
+,{"stream_name":"stdout","time":14076.58365907,"data":" \n"}
+,{"stream_name":"stdout","time":14677.227939201,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":14677.227977332,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":14677.227983054,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":14677.227987751,"data":"    390 k_e4b\n"}
+,{"stream_name":"stdout","time":14677.227992498,"data":" \n"}
+,{"stream_name":"stdout","time":15277.850286719,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":15277.850322693,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":15277.850328263,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":15277.850332434,"data":"    408 k_e4b\n"}
+,{"stream_name":"stdout","time":15277.850336664,"data":" \n"}
+,{"stream_name":"stdout","time":15878.479799341,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":15878.479850092,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":15878.479855816,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":15878.479860044,"data":"    425 k_e4b\n"}
+,{"stream_name":"stdout","time":15878.479864046,"data":" \n"}
+,{"stream_name":"stdout","time":16479.14051755,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":16479.140552823,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":16479.140559114,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":16479.140563908,"data":"    440 k_e4b\n"}
+,{"stream_name":"stdout","time":16479.14056873,"data":" \n"}
+,{"stream_name":"stdout","time":17079.766443633,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":17079.766490397,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":17079.766496663,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":17079.766501546,"data":"    453 k_e4b\n"}
+,{"stream_name":"stdout","time":17079.76650643,"data":" \n"}
+,{"stream_name":"stdout","time":17316.236257769,"data":"lane gpu0 done k_e4b 4595 s\n"}
+,{"stream_name":"stdout","time":17680.440151843,"data":"$ cd /kaggle/working/gl/results/runs \u0026\u0026 find . -name transcript.json | cut -d/ -f2 | sort | uniq -c \n"}
+,{"stream_name":"stdout","time":17680.440227289,"data":"     190 k_12b\n"}
+,{"stream_name":"stdout","time":17680.440237646,"data":"    190 k_e2b\n"}
+,{"stream_name":"stdout","time":17680.440240776,"data":"    456 k_e4b\n"}
+,{"stream_name":"stdout","time":17680.44024369,"data":" \n"}
+,{"stream_name":"stdout","time":17681.64180811,"data":"$ tail -5 /tmp/serve0.log /tmp/serve1.log \n"}
+,{"stream_name":"stdout","time":17681.641840326,"data":"  tail: option used in invalid context -- 5\n"}
+,{"stream_name":"stdout","time":17681.641854817,"data":"\n"}
+,{"stream_name":"stderr","time":17683.809590742,"data":"\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":17683.809630955,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":17684.09527593,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":17684.095303442,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":17685.46751883,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":17686.344937696,"data":"[NbConvertApp] Writing 613634 bytes to __results__.html\n"}
+]

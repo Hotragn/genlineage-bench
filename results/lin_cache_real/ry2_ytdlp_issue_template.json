@@ -1,0 +1,2045 @@
+{
+ "commands": [
+  "make gen"
+ ],
+ "outputs": {
+  ".github/ISSUE_TEMPLATE/1_broken_site.yml": {
+   "command": "make gen",
+   "inputs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+   ],
+   "noisy_lines": 0
+  },
+  ".github/ISSUE_TEMPLATE/2_site_support_request.yml": {
+   "command": "make gen",
+   "inputs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+   ],
+   "noisy_lines": 0
+  },
+  ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": {
+   "command": "make gen",
+   "inputs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+   ],
+   "noisy_lines": 0
+  },
+  ".github/ISSUE_TEMPLATE/4_bug_report.yml": {
+   "command": "make gen",
+   "inputs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+   ],
+   "noisy_lines": 0
+  },
+  ".github/ISSUE_TEMPLATE/5_feature_request.yml": {
+   "command": "make gen",
+   "inputs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+   ],
+   "noisy_lines": 0
+  },
+  ".github/ISSUE_TEMPLATE/6_question.yml": {
+   "command": "make gen",
+   "inputs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    "Makefile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+   ],
+   "noisy_lines": 0
+  }
+ },
+ "seconds": 113.15,
+ "regen_runs": 299,
+ "line_map": {
+  ".github/ISSUE_TEMPLATE/1_broken_site.yml": [
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    1,
+    "name: Broken site support",
+    [
+     0
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    2,
+    "description: Report issue with yt-dlp on a supported site",
+    [
+     1
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    3,
+    "labels: [triage, site-bug]",
+    [
+     2
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    4,
+    "body:",
+    [
+     3
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    5,
+    "%(no_skip)s",
+    [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    6,
+    "- type: checkboxes",
+    [
+     9
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    7,
+    "id: checklist",
+    [
+     10
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    8,
+    "attributes:",
+    [
+     11
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    9,
+    "label: Checklist",
+    [
+     12
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    10,
+    "description: |",
+    [
+     13
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    11,
+    "Carefully read and work through this check list in order to prevent the most com",
+    [
+     14
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    12,
+    "options:",
+    [
+     15
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    13,
+    "- label: I've read the [**NO AI / NO LLM POLICY**](https://github.com/yt-dlp/yt-",
+    [
+     16
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    14,
+    "required: true",
+    [
+     17
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    15,
+    "- label: I'm reporting that yt-dlp is broken on a **supported** site",
+    [
+     18
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    16,
+    "required: true",
+    [
+     19
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    17,
+    "- label: I've verified that I have **updated yt-dlp to nightly or master** ([upd",
+    [
+     20
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    18,
+    "required: true",
+    [
+     21
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    19,
+    "- label: I've checked that all provided URLs are playable in a browser with the ",
+    [
+     22
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    20,
+    "required: true",
+    [
+     23
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    21,
+    "- label: I've checked that all URLs and arguments with special characters are [p",
+    [
+     24
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    22,
+    "required: true",
+    [
+     25
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    23,
+    "- label: I've searched [known issues](https://github.com/yt-dlp/yt-dlp/issues/37",
+    [
+     26
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    24,
+    "required: true",
+    [
+     27
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    25,
+    "- label: I've read about [sharing account credentials](https://github.com/yt-dlp",
+    [
+     28
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    26,
+    "- type: input",
+    [
+     29
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    27,
+    "id: region",
+    [
+     30
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    28,
+    "attributes:",
+    [
+     31
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    29,
+    "label: Region",
+    [
+     32
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    30,
+    "description: Enter the country/region that the site is accessible from",
+    [
+     33
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    31,
+    "placeholder: India",
+    [
+     34
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    32,
+    "- type: textarea",
+    [
+     35
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    33,
+    "id: description",
+    [
+     36
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    34,
+    "attributes:",
+    [
+     37
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    35,
+    "label: Provide a description that is worded well enough to be understood",
+    [
+     38
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    36,
+    "description: See [is-the-description-of-the-issue-itself-sufficient](https://git",
+    [
+     39
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    37,
+    "placeholder: Provide any additional information, any suggested solutions, and as",
+    [
+     40
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    38,
+    "validations:",
+    [
+     41
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+    39,
+    "required: true",
+    [
+     42
+    ]
+   ]
+  ],
+  ".github/ISSUE_TEMPLATE/2_site_support_request.yml": [
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    1,
+    "name: Site support request",
+    [
+     0
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    2,
+    "description: Request support for a new site",
+    [
+     1
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    3,
+    "labels: [triage, site-request]",
+    [
+     2
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    4,
+    "body:",
+    [
+     3
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    5,
+    "%(no_skip)s",
+    [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    6,
+    "- type: checkboxes",
+    [
+     9
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    7,
+    "id: checklist",
+    [
+     10
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    8,
+    "attributes:",
+    [
+     11
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    9,
+    "label: Checklist",
+    [
+     12
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    10,
+    "description: |",
+    [
+     13
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    11,
+    "Carefully read and work through this check list in order to prevent the most com",
+    [
+     14
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    12,
+    "options:",
+    [
+     15
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    13,
+    "- label: I've read the [**NO AI / NO LLM POLICY**](https://github.com/yt-dlp/yt-",
+    [
+     16
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    14,
+    "required: true",
+    [
+     17
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    15,
+    "- label: I'm reporting a new site support request",
+    [
+     18
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    16,
+    "required: true",
+    [
+     19
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    17,
+    "- label: I've verified that I have **updated yt-dlp to nightly or master** ([upd",
+    [
+     20
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    18,
+    "required: true",
+    [
+     21
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    19,
+    "- label: I've checked that all provided URLs are playable in a browser with the ",
+    [
+     22
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    20,
+    "required: true",
+    [
+     23
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    21,
+    "- label: I've checked that none of provided URLs [violate any copyrights](https:",
+    [
+     24
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    22,
+    "required: true",
+    [
+     25
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    23,
+    "- label: I've searched the [bugtracker](https://github.com/yt-dlp/yt-dlp/issues?",
+    [
+     26
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    24,
+    "required: true",
+    [
+     27
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    25,
+    "- label: I've read about [sharing account credentials](https://github.com/yt-dlp",
+    [
+     28
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    26,
+    "- type: input",
+    [
+     29
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    27,
+    "id: region",
+    [
+     30
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    28,
+    "attributes:",
+    [
+     31
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    29,
+    "label: Region",
+    [
+     32
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    30,
+    "description: Enter the country/region that the site is accessible from",
+    [
+     33
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    31,
+    "placeholder: India",
+    [
+     34
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    32,
+    "- type: textarea",
+    [
+     35
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    33,
+    "id: example-urls",
+    [
+     36
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    34,
+    "attributes:",
+    [
+     37
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    35,
+    "label: Example URLs",
+    [
+     38
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    36,
+    "description: |",
+    [
+     39
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    37,
+    "Provide all kinds of example URLs for which support should be added",
+    [
+     40
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    38,
+    "placeholder: |",
+    [
+     41
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    39,
+    "- Single video: https://www.youtube.com/watch?v=BaW_jenozKc",
+    [
+     42
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    40,
+    "- Single video: https://youtu.be/BaW_jenozKc",
+    [
+     43
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    41,
+    "- Playlist: https://www.youtube.com/playlist?list=PL4lCao7KL_QFVb7Iudeipvc2BCavE",
+    [
+     44
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    42,
+    "validations:",
+    [
+     45
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    43,
+    "required: true",
+    [
+     46
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    44,
+    "- type: textarea",
+    [
+     47
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    45,
+    "id: description",
+    [
+     48
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    46,
+    "attributes:",
+    [
+     49
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    47,
+    "label: Provide a description that is worded well enough to be understood",
+    [
+     50
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    48,
+    "description: See [is-the-description-of-the-issue-itself-sufficient](https://git",
+    [
+     51
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    49,
+    "placeholder: Provide any additional information, any suggested solutions, and as",
+    [
+     52
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    50,
+    "validations:",
+    [
+     53
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+    51,
+    "required: true",
+    [
+     54
+    ]
+   ]
+  ],
+  ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": [
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    1,
+    "name: Site feature request",
+    [
+     0
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    2,
+    "description: Request new functionality for a site supported by yt-dlp",
+    [
+     1
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    3,
+    "labels: [triage, site-enhancement]",
+    [
+     2
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    4,
+    "body:",
+    [
+     3
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    5,
+    "%(no_skip)s",
+    [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    6,
+    "- type: checkboxes",
+    [
+     9
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    7,
+    "id: checklist",
+    [
+     10
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    8,
+    "attributes:",
+    [
+     11
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    9,
+    "label: Checklist",
+    [
+     12
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    10,
+    "description: |",
+    [
+     13
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    11,
+    "Carefully read and work through this check list in order to prevent the most com",
+    [
+     14
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    12,
+    "options:",
+    [
+     15
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    13,
+    "- label: I've read the [**NO AI / NO LLM POLICY**](https://github.com/yt-dlp/yt-",
+    [
+     16
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    14,
+    "required: true",
+    [
+     17
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    15,
+    "- label: I'm requesting a site-specific feature",
+    [
+     18
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    16,
+    "required: true",
+    [
+     19
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    17,
+    "- label: I've verified that I have **updated yt-dlp to nightly or master** ([upd",
+    [
+     20
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    18,
+    "required: true",
+    [
+     21
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    19,
+    "- label: I've checked that all provided URLs are playable in a browser with the ",
+    [
+     22
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    20,
+    "required: true",
+    [
+     23
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    21,
+    "- label: I've searched the [bugtracker](https://github.com/yt-dlp/yt-dlp/issues?",
+    [
+     24
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    22,
+    "required: true",
+    [
+     25
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    23,
+    "- label: I've read about [sharing account credentials](https://github.com/yt-dlp",
+    [
+     26
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    24,
+    "- type: input",
+    [
+     27
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    25,
+    "id: region",
+    [
+     28
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    26,
+    "attributes:",
+    [
+     29
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    27,
+    "label: Region",
+    [
+     30
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    28,
+    "description: Enter the country/region that the site is accessible from",
+    [
+     31
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    29,
+    "placeholder: India",
+    [
+     32
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    30,
+    "- type: textarea",
+    [
+     33
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    31,
+    "id: example-urls",
+    [
+     34
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    32,
+    "attributes:",
+    [
+     35
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    33,
+    "label: Example URLs",
+    [
+     36
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    34,
+    "description: |",
+    [
+     37
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    35,
+    "Example URLs that can be used to demonstrate the requested feature",
+    [
+     38
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    36,
+    "placeholder: |",
+    [
+     39
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    37,
+    "https://www.youtube.com/watch?v=BaW_jenozKc",
+    [
+     40
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    38,
+    "validations:",
+    [
+     41
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    39,
+    "required: true",
+    [
+     42
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    40,
+    "- type: textarea",
+    [
+     43
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    41,
+    "id: description",
+    [
+     44
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    42,
+    "attributes:",
+    [
+     45
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    43,
+    "label: Provide a description that is worded well enough to be understood",
+    [
+     46
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    44,
+    "description: See [is-the-description-of-the-issue-itself-sufficient](https://git",
+    [
+     47
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    45,
+    "placeholder: Provide any additional information, any suggested solutions, and as",
+    [
+     48
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    46,
+    "validations:",
+    [
+     49
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+    47,
+    "required: true",
+    [
+     50
+    ]
+   ]
+  ],
+  ".github/ISSUE_TEMPLATE/4_bug_report.yml": [
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    1,
+    "name: Core bug report",
+    [
+     0
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    2,
+    "description: Report a bug unrelated to any particular site or extractor",
+    [
+     1
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    3,
+    "labels: [triage, bug]",
+    [
+     2
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    4,
+    "body:",
+    [
+     3
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    5,
+    "%(no_skip)s",
+    [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    6,
+    "- type: checkboxes",
+    [
+     9
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    7,
+    "id: checklist",
+    [
+     10
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    8,
+    "attributes:",
+    [
+     11
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    9,
+    "label: Checklist",
+    [
+     12
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    10,
+    "description: |",
+    [
+     13
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    11,
+    "Carefully read and work through this check list in order to prevent the most com",
+    [
+     14
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    12,
+    "options:",
+    [
+     15
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    13,
+    "- label: I've read the [**NO AI / NO LLM POLICY**](https://github.com/yt-dlp/yt-",
+    [
+     16
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    14,
+    "required: true",
+    [
+     17
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    15,
+    "- label: I'm reporting a bug unrelated to a specific site",
+    [
+     18
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    16,
+    "required: true",
+    [
+     19
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    17,
+    "- label: I've verified that I have **updated yt-dlp to nightly or master** ([upd",
+    [
+     20
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    18,
+    "required: true",
+    [
+     21
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    19,
+    "- label: I've searched [known issues](https://github.com/yt-dlp/yt-dlp/issues/37",
+    [
+     22
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    20,
+    "required: true",
+    [
+     23
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    21,
+    "- type: textarea",
+    [
+     24
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    22,
+    "id: description",
+    [
+     25
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    23,
+    "attributes:",
+    [
+     26
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    24,
+    "label: Provide a description that is worded well enough to be understood",
+    [
+     27
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    25,
+    "description: See [is-the-description-of-the-issue-itself-sufficient](https://git",
+    [
+     28
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    26,
+    "placeholder: Provide any additional information, any suggested solutions, and as",
+    [
+     29
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    27,
+    "validations:",
+    [
+     30
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+    28,
+    "required: true",
+    [
+     31
+    ]
+   ]
+  ],
+  ".github/ISSUE_TEMPLATE/5_feature_request.yml": [
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    1,
+    "name: Feature request",
+    [
+     0
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    2,
+    "description: Request a new feature unrelated to any particular site or extractor",
+    [
+     1
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    3,
+    "labels: [triage, enhancement]",
+    [
+     2
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    4,
+    "body:",
+    [
+     3
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    5,
+    "%(no_skip)s",
+    [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    6,
+    "- type: checkboxes",
+    [
+     9
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    7,
+    "id: checklist",
+    [
+     10
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    8,
+    "attributes:",
+    [
+     11
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    9,
+    "label: Checklist",
+    [
+     12
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    10,
+    "description: |",
+    [
+     13
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    11,
+    "Carefully read and work through this check list in order to prevent the most com",
+    [
+     14
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    12,
+    "options:",
+    [
+     15
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    13,
+    "- label: I've read the [**NO AI / NO LLM POLICY**](https://github.com/yt-dlp/yt-",
+    [
+     16
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    14,
+    "required: true",
+    [
+     17
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    15,
+    "- label: I'm requesting a feature unrelated to a specific site",
+    [
+     18
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    16,
+    "required: true",
+    [
+     19
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    17,
+    "- label: I've looked through the [README](https://github.com/yt-dlp/yt-dlp#readm",
+    [
+     20
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    18,
+    "required: true",
+    [
+     21
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    19,
+    "- label: I've verified that I have **updated yt-dlp to nightly or master** ([upd",
+    [
+     22
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    20,
+    "required: true",
+    [
+     23
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    21,
+    "- label: I've searched the [bugtracker](https://github.com/yt-dlp/yt-dlp/issues?",
+    [
+     24
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    22,
+    "required: true",
+    [
+     25
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    23,
+    "- type: textarea",
+    [
+     26
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    24,
+    "id: description",
+    [
+     27
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    25,
+    "attributes:",
+    [
+     28
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    26,
+    "label: Provide a description that is worded well enough to be understood",
+    [
+     29
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    27,
+    "description: See [is-the-description-of-the-issue-itself-sufficient](https://git",
+    [
+     30
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    28,
+    "placeholder: Provide any additional information, any suggested solutions, and as",
+    [
+     31
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    29,
+    "validations:",
+    [
+     32
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+    30,
+    "required: true",
+    [
+     33
+    ]
+   ]
+  ],
+  ".github/ISSUE_TEMPLATE/6_question.yml": [
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    1,
+    "name: Ask question",
+    [
+     0
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    2,
+    "description: Ask a question about using yt-dlp",
+    [
+     1
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    3,
+    "labels: [question]",
+    [
+     2
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    4,
+    "body:",
+    [
+     3
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    5,
+    "%(no_skip)s",
+    [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    6,
+    "- type: markdown",
+    [
+     9
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    7,
+    "attributes:",
+    [
+     10
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    8,
+    "value: |",
+    [
+     11
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    9,
+    "### Make sure you are **only** asking a question and not reporting a bug or requ",
+    [
+     12
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    10,
+    "If your question contains \"isn't working\" or \"can you add\", this is most likely ",
+    [
+     13
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    11,
+    "If you are in doubt whether this is the right template, **USE ANOTHER TEMPLATE**",
+    [
+     14
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    12,
+    "- type: checkboxes",
+    [
+     15
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    13,
+    "id: checklist",
+    [
+     16
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    14,
+    "attributes:",
+    [
+     17
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    15,
+    "label: Checklist",
+    [
+     18
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    16,
+    "description: |",
+    [
+     19
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    17,
+    "Carefully read and work through this check list in order to prevent the most com",
+    [
+     20
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    18,
+    "options:",
+    [
+     21
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    19,
+    "- label: I've read the [**NO AI / NO LLM POLICY**](https://github.com/yt-dlp/yt-",
+    [
+     22
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    20,
+    "required: true",
+    [
+     23
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    21,
+    "- label: I'm asking a question and **not** reporting a bug or requesting a featu",
+    [
+     24
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    22,
+    "required: true",
+    [
+     25
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    23,
+    "- label: I've looked through the [README](https://github.com/yt-dlp/yt-dlp#readm",
+    [
+     26
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    24,
+    "required: true",
+    [
+     27
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    25,
+    "- label: I've verified that I have **updated yt-dlp to nightly or master** ([upd",
+    [
+     28
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    26,
+    "required: true",
+    [
+     29
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    27,
+    "- label: I've searched [known issues](https://github.com/yt-dlp/yt-dlp/issues/37",
+    [
+     30
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    28,
+    "required: true",
+    [
+     31
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    29,
+    "- type: textarea",
+    [
+     32
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    30,
+    "id: question",
+    [
+     33
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    31,
+    "attributes:",
+    [
+     34
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    32,
+    "label: Please make sure the question is worded well enough to be understood",
+    [
+     35
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    33,
+    "description: See [is-the-description-of-the-issue-itself-sufficient](https://git",
+    [
+     36
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    34,
+    "placeholder: Provide any additional information and as much context and examples",
+    [
+     37
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    35,
+    "validations:",
+    [
+     38
+    ]
+   ],
+   [
+    ".github/ISSUE_TEMPLATE_tmpl/6_question.yml",
+    36,
+    "required: true",
+    [
+     39
+    ]
+   ]
+  ]
+ }
+}

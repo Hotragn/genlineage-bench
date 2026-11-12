@@ -1,0 +1,39 @@
+{
+ "id": "sq3_control_revenue",
+ "family": "sql",
+ "split": "dev",
+ "kind": "control",
+ "fix_locus": "hand",
+ "header": true,
+ "agents_md": false,
+ "issue": "`queries.revenue()` counts unpaid invoices too; it must only sum paid invoices. test_revenue fails. Please fix.",
+ "generated": [
+  "db/models.py"
+ ],
+ "sources": [
+  "db/schema.sql"
+ ],
+ "generators": [
+  "tools/sqlgen.py"
+ ],
+ "ref_fix": {
+  "db/queries.py": [
+   [
+    "for r in rows)",
+    "for r in rows if r.paid)"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_models.py": "2811b423959669f8d27942e5bda1f0faf0a68bf2f63ed16c8f36219682ae2152"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "db/models.py": []
+ }
+}

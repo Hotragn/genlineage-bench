@@ -1,0 +1,101 @@
+{
+ "sampled": 200,
+ "fetched": 181,
+ "strong": 109,
+ "strong_rate": 0.6022,
+ "strong_ci95": [
+  0.5295,
+  0.6707
+ ],
+ "weak": 37,
+ "weak_rate": 0.2044,
+ "weak_ci95": [
+  0.1521,
+  0.269
+ ],
+ "none": 35,
+ "none_rate": 0.1934,
+ "none_ci95": [
+  0.1425,
+  0.257
+ ],
+ "headerguard_visible": 122,
+ "headerguard_invisible": 59,
+ "headerguard_invisible_rate": 0.326,
+ "headerguard_invisible_ci95": [
+  0.2619,
+  0.3973
+ ],
+ "used_head_commit": 181,
+ "used_last_commit": 0,
+ "by_rule_strong_vs_not": {
+  "protobuf_go": [
+   19,
+   2
+  ],
+  "dotnet_designer": [
+   13,
+   0
+  ],
+  "protobuf_py": [
+   4,
+   0
+  ],
+  "generated_dir": [
+   19,
+   35
+  ],
+  "dot_gen": [
+   6,
+   18
+  ],
+  "dart_build_runner": [
+   7,
+   0
+  ],
+  "dot_generated": [
+   23,
+   10
+  ],
+  "sqlc_go": [
+   10,
+   0
+  ],
+  "k8s_zz_generated": [
+   1,
+   6
+  ],
+  "go_underscore_gen": [
+   6,
+   0
+  ],
+  "protobuf_js_ts": [
+   1,
+   0
+  ],
+  "protobuf_cpp": [
+   0,
+   1
+  ]
+ },
+ "audit": {
+  "consistent_regen": 22,
+  "hand_edit_lost": 3,
+  "unclear": 4,
+  "not_generated": 1
+ },
+ "audit_n": 30,
+ "audit_hand_edit_lost_ci95": [
+  0.0346,
+  0.2562
+ ],
+ "audit_truly_generated": 29,
+ "strong_40_lines": 118,
+ "no_strong_40_lines_rate": 0.3481,
+ "no_strong_40_ci95": [
+  0.2825,
+  0.42
+ ],
+ "headerguard_invisible_40_lines": 52,
+ "headerguard_invisible_40_rate": 0.2873
+}

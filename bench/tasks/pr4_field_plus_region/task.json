@@ -1,0 +1,56 @@
+{
+ "id": "pr4_field_plus_region",
+ "family": "protected",
+ "split": "test",
+ "kind": "mixed",
+ "fix_locus": "spec+generated_region",
+ "header": true,
+ "agents_md": false,
+ "issue": "Coupons need a usage limit: add an integer field `max_uses` to Coupon (default 1), and `Coupon.validate()` must reject coupons with max_uses below 1. test_max_uses fails. Please implement it.",
+ "generated": [
+  "models/entities.py"
+ ],
+ "sources": [
+  "model/entities.yaml"
+ ],
+ "generators": [
+  "tools/gen_entities.py"
+ ],
+ "ref_fix": {
+  "model/entities.yaml": [
+   [
+    "      - {name: percent_off, type: int}",
+    "      - {name: percent_off, type: int}\n      - {name: max_uses, type: int, default: 1}"
+   ]
+  ],
+  "models/entities.py": [
+   [
+    "        return 0 < self.percent_off <= 100",
+    "        return 0 < self.percent_off <= 100 and self.max_uses >= 1"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "models/entities.py": [
+   [
+    "    percent_off: int\n",
+    "    percent_off: int\n    max_uses: int = 1\n"
+   ],
+   [
+    "        return 0 < self.percent_off <= 100",
+    "        return 0 < self.percent_off <= 100 and self.max_uses >= 1"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_entities.py": "036e10798591604579f6bbc37208391521658f5b7e7b5d69ec399b4d63c383b2"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "models/entities.py": []
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "oa3_enum_value",
+ "family": "openapi",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": false,
+ "agents_md": false,
+ "issue": "Archived accounts returned by the API cannot be parsed: `api.parse_account({'id': 1, 'username': 'old', 'status': 'archived'})` raises a ValidationError. `archived` is a valid status. test_archived_status fails. Please fix.",
+ "generated": [
+  "client/models.py"
+ ],
+ "sources": [
+  "api/openapi.yaml"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "api/openapi.yaml": [
+   [
+    "enum: [active, suspended]",
+    "enum: [active, suspended, archived]"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "client/models.py": [
+   [
+    "    suspended = 'suspended'",
+    "    suspended = 'suspended'\n    archived = 'archived'"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_accounts.py": "e1054b4c430883f76db30258a6edf5e61cb2db358cf9573df43de98cead1d55d"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "client/models.py": []
+ }
+}

@@ -1,0 +1,503 @@
+[
+ {
+  "task": "pb1_field_typo",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "pb2_enum_missing",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "pb3_control_display",
+  "kind": "control",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "oa1_property_typo",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "oa2_constraint",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "oa3_enum_value",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "oa4_control_paging",
+  "kind": "control",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "oa5_ref_schema",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "jj1_feature_typo",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "jj2_template_bool",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "jj3_template_slice",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "jj4_control_backoff",
+  "kind": "control",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "lk1_decimal_token",
+  "kind": "regen",
+  "deterministic_regen": false,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "lk2_keyword_typo",
+  "kind": "regen",
+  "deterministic_regen": false,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "lk3_control_div",
+  "kind": "control",
+  "deterministic_regen": false,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "pr1_user_region",
+  "kind": "inregion",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "pr2_spec_default",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "tb1_generator_slice",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "tb2_data_code",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "tb3_generator_terminal",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "tb4_control_cancel",
+  "kind": "control",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "sq1_type_map",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "sq2_ddl_nullable",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ },
+ {
+  "task": "sq3_control_revenue",
+  "kind": "control",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "pr3_user_region_price",
+  "kind": "inregion",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "ok": true
+ },
+ {
+  "task": "pr4_field_plus_region",
+  "kind": "mixed",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true
+ }
+]

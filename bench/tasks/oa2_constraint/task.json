@@ -1,0 +1,44 @@
+{
+ "id": "oa2_constraint",
+ "family": "openapi",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": false,
+ "agents_md": true,
+ "issue": "Signing up with a 12 character username such as `margarethill` fails with a pydantic ValidationError (string too long). Usernames may be up to 32 characters. test_long_username fails. Please fix.",
+ "generated": [
+  "client/models.py"
+ ],
+ "sources": [
+  "api/openapi.yaml"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "api/openapi.yaml": [
+   [
+    "maxLength: 8",
+    "maxLength: 32"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "client/models.py": [
+   [
+    "max_length=8",
+    "max_length=32"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_accounts.py": "1a64828bb0b4c26b60db1437fad0d101d69f45794da16410460b284600c972f9"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "client/models.py": []
+ }
+}

@@ -1,0 +1,535 @@
+{
+ "directed": true,
+ "multigraph": true,
+ "graph": {
+  "name": "oa5_ref_schema",
+  "commands": [
+   "make gen"
+  ],
+  "inference_seconds": 29.53,
+  "regen_runs": 52
+ },
+ "nodes": [
+  {
+   "id": "file:client/models.py",
+   "kind": "file",
+   "path": "client/models.py",
+   "role": "output",
+   "noisy_lines": 0
+  },
+  {
+   "id": "cmd:make gen",
+   "kind": "command",
+   "command": "make gen"
+  },
+  {
+   "id": "file:Makefile",
+   "kind": "file",
+   "path": "Makefile",
+   "role": "build"
+  },
+  {
+   "id": "file:schemas/address.json",
+   "kind": "file",
+   "path": "schemas/address.json",
+   "role": "input"
+  },
+  {
+   "id": "file:schemas/customer.json",
+   "kind": "file",
+   "path": "schemas/customer.json",
+   "role": "input"
+  },
+  {
+   "id": "line:schemas/address.json:6",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 6,
+   "text": "\"street\","
+  },
+  {
+   "id": "line:client/models.py:10",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 10
+  },
+  {
+   "id": "line:schemas/address.json:7",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 7,
+   "text": "\"city\","
+  },
+  {
+   "id": "line:client/models.py:11",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 11
+  },
+  {
+   "id": "line:schemas/address.json:8",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 8,
+   "text": "\"country\""
+  },
+  {
+   "id": "line:client/models.py:13",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 13
+  },
+  {
+   "id": "line:schemas/address.json:12",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 12,
+   "text": "\"type\": \"string\""
+  },
+  {
+   "id": "line:client/models.py:6",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 6
+  },
+  {
+   "id": "line:schemas/address.json:15",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 15,
+   "text": "\"type\": \"string\""
+  },
+  {
+   "id": "line:client/models.py:5",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 5
+  },
+  {
+   "id": "line:schemas/address.json:18",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 18,
+   "text": "\"type\": \"string\""
+  },
+  {
+   "id": "line:client/models.py:12",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 12
+  },
+  {
+   "id": "line:schemas/address.json:21",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 21,
+   "text": "\"type\": \"string\","
+  },
+  {
+   "id": "line:schemas/address.json:22",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 22,
+   "text": "\"minLength\": 2,"
+  },
+  {
+   "id": "line:schemas/address.json:23",
+   "kind": "line",
+   "path": "schemas/address.json",
+   "line": 23,
+   "text": "\"maxLength\": 2"
+  },
+  {
+   "id": "line:schemas/customer.json:3",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 3,
+   "text": "\"title\": \"Customer\","
+  },
+  {
+   "id": "line:client/models.py:16",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 16
+  },
+  {
+   "id": "line:schemas/customer.json:6",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 6,
+   "text": "\"id\","
+  },
+  {
+   "id": "line:client/models.py:17",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 17
+  },
+  {
+   "id": "line:schemas/customer.json:7",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 7,
+   "text": "\"name\","
+  },
+  {
+   "id": "line:client/models.py:18",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 18
+  },
+  {
+   "id": "line:schemas/customer.json:8",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 8,
+   "text": "\"address\""
+  },
+  {
+   "id": "line:client/models.py:19",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 19
+  },
+  {
+   "id": "line:schemas/customer.json:12",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 12,
+   "text": "\"type\": \"integer\""
+  },
+  {
+   "id": "line:schemas/customer.json:15",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 15,
+   "text": "\"type\": \"string\""
+  },
+  {
+   "id": "line:schemas/customer.json:18",
+   "kind": "line",
+   "path": "schemas/customer.json",
+   "line": 18,
+   "text": "\"$ref\": \"address.json\""
+  },
+  {
+   "id": "line:client/models.py:8",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 8
+  },
+  {
+   "id": "line:client/models.py:9",
+   "kind": "line",
+   "path": "client/models.py",
+   "line": 9
+  }
+ ],
+ "links": [
+  {
+   "source": "file:client/models.py",
+   "target": "cmd:make gen",
+   "type": "produced_by"
+  },
+  {
+   "source": "file:client/models.py",
+   "target": "file:Makefile",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:client/models.py",
+   "target": "file:schemas/address.json",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:client/models.py",
+   "target": "file:schemas/customer.json",
+   "type": "generated_from"
+  },
+  {
+   "source": "line:schemas/address.json:6",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:10",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:10",
+   "target": "line:schemas/address.json:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:7",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:11",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:11",
+   "target": "line:schemas/address.json:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:8",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:13",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:13",
+   "target": "line:schemas/address.json:8",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:12",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:6",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:6",
+   "target": "line:schemas/address.json:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:10",
+   "target": "line:schemas/address.json:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:15",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:5",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:5",
+   "target": "line:schemas/address.json:15",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:11",
+   "target": "line:schemas/address.json:15",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:18",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:5",
+   "target": "line:schemas/address.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:12",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:12",
+   "target": "line:schemas/address.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:21",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:6",
+   "target": "line:schemas/address.json:21",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:13",
+   "target": "line:schemas/address.json:21",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:22",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:13",
+   "target": "line:schemas/address.json:22",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/address.json:23",
+   "target": "file:schemas/address.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:13",
+   "target": "line:schemas/address.json:23",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:3",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:16",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:16",
+   "target": "line:schemas/customer.json:3",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:6",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:17",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:17",
+   "target": "line:schemas/customer.json:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:7",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:18",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:18",
+   "target": "line:schemas/customer.json:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:8",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:19",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:19",
+   "target": "line:schemas/customer.json:8",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:12",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:5",
+   "target": "line:schemas/customer.json:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:17",
+   "target": "line:schemas/customer.json:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:15",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:5",
+   "target": "line:schemas/customer.json:15",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:18",
+   "target": "line:schemas/customer.json:15",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:schemas/customer.json:18",
+   "target": "file:schemas/customer.json",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:6",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:8",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:8",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:9",
+   "target": "file:client/models.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:client/models.py:9",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:10",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:11",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:12",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:13",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:client/models.py:19",
+   "target": "line:schemas/customer.json:18",
+   "type": "derived_from"
+  }
+ ]
+}

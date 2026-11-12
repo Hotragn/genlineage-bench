@@ -1,0 +1,74 @@
+{
+ "id": "rp2_pycparser_structref",
+ "family": "pycparser-astgen",
+ "split": "real",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": false,
+ "issue": "c_generator.CGenerator crashes with AttributeError when it regenerates C code containing struct member access (`p->x` or `q.x`); parsing works. test_member_access_round_trip fails. Please fix.",
+ "generated": [
+  "pycparser/c_ast.py"
+ ],
+ "sources": [
+  "pycparser/_c_ast.cfg"
+ ],
+ "generators": [
+  "pycparser/_ast_gen.py"
+ ],
+ "ref_fix": {
+  "pycparser/_c_ast.cfg": [
+   [
+    "\nStructRef: [name*, kind, field*]",
+    "\nStructRef: [name*, type, field*]"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "lineage_commands": [
+  "make gen"
+ ],
+ "upstream": {
+  "repo": "pycparser",
+  "commit": "3ec766b7cd94724cba714296509604597ea4ce4e",
+  "trimmed": [
+   "tests/README.txt",
+   "tests/c_files",
+   "tests/test_c23_attributes.py",
+   "tests/test_c_generator.py",
+   "tests/test_c_lexer.py",
+   "tests/test_c_parser.py",
+   "tests/test_examples.py",
+   "tests/test_general.py",
+   "tests/test_util.py"
+  ],
+  "clean_regen_changed": [],
+  "bug_regen_changed": [
+   "pycparser/c_ast.py"
+  ],
+  "makefile": "real Makefile + appended `gen:` target"
+ },
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_c_ast.py": "3b7e84f3be56754e5529c458adc25c7560ad59c2422d8985f4ba6d892077c0e5",
+  "tests/test_issue_structref.py": "71c23aec431499ddaa90c621bd8f91dfe9c04386e348bbad8ebcc0e971e91ce7"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "pycparser/c_ast.py": []
+ },
+ "gen_only_fix": {
+  "pycparser/c_ast.py": [
+   [
+    "\nclass StructRef(Node):\n    __slots__ = (\"name\", \"kind\", \"field\", \"coord\", \"__weakref__\")\n\n    def __init__(self, name, kind, field, coord=None):\n        self.name = name\n        self.kind = kind\n        self.field = field\n        self.coord = coord\n",
+    "\nclass StructRef(Node):\n    __slots__ = (\"name\", \"type\", \"field\", \"coord\", \"__weakref__\")\n\n    def __init__(self, name, type, field, coord=None):\n        self.name = name\n        self.type = type\n        self.field = field\n        self.coord = coord\n"
+   ],
+   [
+    "            yield self.field\n\n    attr_names = (\"kind\",)\n\n\n",
+    "            yield self.field\n\n    attr_names = (\"type\",)\n\n\n"
+   ]
+  ]
+ }
+}

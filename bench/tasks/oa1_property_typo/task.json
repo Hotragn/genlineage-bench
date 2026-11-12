@@ -1,0 +1,44 @@
+{
+ "id": "oa1_property_typo",
+ "family": "openapi",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": false,
+ "issue": "Account payloads from the API lose their email: `api.parse_account({...,'email': 'x@y'}).email` raises AttributeError. test_account_email fails. Please fix.",
+ "generated": [
+  "client/models.py"
+ ],
+ "sources": [
+  "api/openapi.yaml"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "api/openapi.yaml": [
+   [
+    "        emial:",
+    "        email:"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "client/models.py": [
+   [
+    "emial",
+    "email"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_accounts.py": "050b0d456ec535b7758c8069e67245505bee499b405cbe7d81cf3a0d9a7abf2c"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "client/models.py": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "id": "jj1_feature_typo",
+ "family": "jinja",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": false,
+ "issue": "The beta_search feature is switched on in our config, but `flags.is_enabled('beta_search')` returns False. test_beta_search fails. Please fix.",
+ "generated": [
+  "app/settings.py",
+  "app/flags.py"
+ ],
+ "sources": [
+  "config/settings.yaml",
+  "config/features.yaml",
+  "templates/settings.py.j2",
+  "templates/flags.py.j2"
+ ],
+ "generators": [
+  "tools/render.py"
+ ],
+ "ref_fix": {
+  "config/features.yaml": [
+   [
+    "beta_serach",
+    "beta_search"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "app/flags.py": [
+   [
+    "beta_serach",
+    "beta_search"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_flags.py": "940f3e2e22c6ec5e1ea15f530913949da823451ac62511896cd165355a5c4430"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "app/settings.py": [],
+  "app/flags.py": []
+ }
+}

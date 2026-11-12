@@ -1,0 +1,34 @@
+{
+ "rp1_pycparser_if_else": {
+  "family": "pycparser-astgen",
+  "split": "real",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false
+ },
+ "rp2_pycparser_structref": {
+  "family": "pycparser-astgen",
+  "split": "real",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false
+ },
+ "ry1_ytdlp_lazy_url": {
+  "family": "ytdlp-lazyextractors",
+  "split": "real",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false
+ },
+ "ry2_ytdlp_issue_template": {
+  "family": "ytdlp-issuetemplates",
+  "split": "real",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false
+ }
+}

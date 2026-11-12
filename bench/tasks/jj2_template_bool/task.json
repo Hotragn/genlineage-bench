@@ -1,0 +1,55 @@
+{
+ "id": "jj2_template_bool",
+ "family": "jinja",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "template",
+ "header": false,
+ "agents_md": false,
+ "issue": "Caching stays on in debug mode: with `debug: false` in config the code still behaves as if debug were on, and `settings.DEBUG` is truthy. test_debug_flag fails. Please fix.",
+ "generated": [
+  "app/settings.py",
+  "app/flags.py"
+ ],
+ "sources": [
+  "config/settings.yaml",
+  "config/features.yaml",
+  "templates/settings.py.j2",
+  "templates/flags.py.j2"
+ ],
+ "generators": [
+  "tools/render.py"
+ ],
+ "ref_fix": {
+  "templates/settings.py.j2": [
+   [
+    "= \"{{ value }}\"",
+    "= {{ value }}"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "app/settings.py": [
+   [
+    "DEBUG = \"False\"",
+    "DEBUG = False"
+   ],
+   [
+    "USE_CACHE = \"True\"",
+    "USE_CACHE = True"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_settings.py": "76fd882985dadafa1fd992eb96e96a70d2266a632adc20d3bb024a8b038d518e"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "app/settings.py": [],
+  "app/flags.py": []
+ }
+}

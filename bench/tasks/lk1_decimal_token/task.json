@@ -1,0 +1,47 @@
+{
+ "id": "lk1_decimal_token",
+ "family": "lark",
+ "regen_nondeterministic": true,
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": false,
+ "issue": "Decimal numbers are rejected: `evaluate('1.5 * 2')` raises an UnexpectedCharacters error from the parser. test_decimals fails. Please fix.",
+ "generated": [
+  "calc/_parser.py"
+ ],
+ "sources": [
+  "calc/grammar.lark"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "calc/grammar.lark": [
+   [
+    "NUMBER: /[0-9]+/",
+    "NUMBER: /[0-9]+(\\.[0-9]+)?/"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "calc/_parser.py": [
+   [
+    "'value': '[0-9]+'",
+    "'value': '[0-9]+(\\\\.[0-9]+)?'"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_eval.py": "b6001ce397dab5e845fc0475f76fd4b96fd239debbe1679295507d7cc809d2ef"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "calc/_parser.py": [
+   3563
+  ]
+ }
+}

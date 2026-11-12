@@ -1,0 +1,45 @@
+{
+ "id": "oa5_ref_schema",
+ "family": "openapi",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": true,
+ "issue": "Customers with a postal code fail to load: `Customer.model_validate(...)` with an address that has `postal_code` keeps no postal code and test_postal_code fails. Addresses without a postal code must still be valid. Please fix.",
+ "generated": [
+  "client/models.py"
+ ],
+ "sources": [
+  "schemas/address.json",
+  "schemas/customer.json"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "schemas/address.json": [
+   [
+    "\"postcode\"",
+    "\"postal_code\""
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "client/models.py": [
+   [
+    "postcode",
+    "postal_code"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_customer.py": "533405338089c011ee24f1960a420887e7ffc236d10e7da8db58a4771f2f5e95"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "client/models.py": []
+ }
+}

@@ -1,0 +1,164 @@
+[
+ {
+  "task": "rp1_pycparser_if_else",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true,
+  "gen_only_fix_hunks": {
+   "pycparser/c_ast.py": 2
+  },
+  "upstream": {
+   "repo": "pycparser",
+   "commit": "3ec766b7cd94724cba714296509604597ea4ce4e",
+   "trimmed": [
+    "tests/README.txt",
+    "tests/c_files",
+    "tests/test_c23_attributes.py",
+    "tests/test_c_generator.py",
+    "tests/test_c_lexer.py",
+    "tests/test_c_parser.py",
+    "tests/test_examples.py",
+    "tests/test_general.py",
+    "tests/test_util.py"
+   ],
+   "clean_regen_changed": [],
+   "bug_regen_changed": [
+    "pycparser/c_ast.py"
+   ],
+   "makefile": "real Makefile + appended `gen:` target"
+  }
+ },
+ {
+  "task": "rp2_pycparser_structref",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true,
+  "gen_only_fix_hunks": {
+   "pycparser/c_ast.py": 2
+  },
+  "upstream": {
+   "repo": "pycparser",
+   "commit": "3ec766b7cd94724cba714296509604597ea4ce4e",
+   "trimmed": [
+    "tests/README.txt",
+    "tests/c_files",
+    "tests/test_c23_attributes.py",
+    "tests/test_c_generator.py",
+    "tests/test_c_lexer.py",
+    "tests/test_c_parser.py",
+    "tests/test_examples.py",
+    "tests/test_general.py",
+    "tests/test_util.py"
+   ],
+   "clean_regen_changed": [],
+   "bug_regen_changed": [
+    "pycparser/c_ast.py"
+   ],
+   "makefile": "real Makefile + appended `gen:` target"
+  }
+ },
+ {
+  "task": "ry1_ytdlp_lazy_url",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true,
+  "gen_only_fix_hunks": {
+   "yt_dlp/extractor/lazy_extractors.py": 1
+  },
+  "upstream": {
+   "repo": "yt-dlp",
+   "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+   "trimmed": [
+    "test"
+   ],
+   "clean_regen_changed": [
+    "yt_dlp/extractor/lazy_extractors.py"
+   ],
+   "bug_regen_changed": [
+    "yt_dlp/extractor/lazy_extractors.py"
+   ],
+   "makefile": "real Makefile + appended `gen:` target"
+  }
+ },
+ {
+  "task": "ry2_ytdlp_issue_template",
+  "kind": "regen",
+  "deterministic_regen": true,
+  "none": [
+   false,
+   false
+  ],
+  "none_root_cause": false,
+  "ref_fix": [
+   true,
+   true
+  ],
+  "ref_fix_root_cause": true,
+  "gen_only_fix": [
+   true,
+   false
+  ],
+  "gen_only_fix_root_cause": false,
+  "ok": true,
+  "gen_only_fix_hunks": {
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 2
+  },
+  "upstream": {
+   "repo": "yt-dlp",
+   "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+   "trimmed": [
+    "test"
+   ],
+   "clean_regen_changed": [],
+   "bug_regen_changed": [
+    ".github/ISSUE_TEMPLATE/4_bug_report.yml"
+   ],
+   "makefile": "real Makefile + appended `gen:` target"
+  }
+ }
+]

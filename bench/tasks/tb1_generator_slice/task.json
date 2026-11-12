@@ -1,0 +1,46 @@
+{
+ "id": "tb1_generator_slice",
+ "family": "table",
+ "split": "dev",
+ "kind": "regen",
+ "fix_locus": "generator",
+ "header": true,
+ "agents_md": false,
+ "issue": "test_refunded_status fails with AttributeError: OrderStatus has no attribute REFUNDED, even though REFUNDED is listed in our status table. Please fix it.",
+ "generated": [
+  "orders/status.py"
+ ],
+ "sources": [
+  "data/order_status.csv"
+ ],
+ "generators": [
+  "scripts/gen_status.py"
+ ],
+ "ref_fix": {
+  "scripts/gen_status.py": [
+   [
+    "for r in rows[:-1]:",
+    "for r in rows:"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "orders/status.py": [
+   [
+    "    DELIVERED = 40",
+    "    DELIVERED = 40\n    REFUNDED = 50"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_status.py": "3806cf69dddfd769e3c311b8e530672a52f39be4fcb151ecc98fe810052d4f7c"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "orders/status.py": []
+ }
+}

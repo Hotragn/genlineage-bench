@@ -1,0 +1,10 @@
+# This file is rendered from templates/settings.py.j2 by tools/render.py. DO NOT EDIT.
+{% for key, value in settings.items() -%}
+{% if value is boolean -%}
+{{ key | upper }} = {{ value }}
+{% elif value is string -%}
+{{ key | upper }} = {{ value | tojson }}
+{% else -%}
+{{ key | upper }} = {{ value }}
+{% endif -%}
+{% endfor %}

@@ -1,0 +1,39 @@
+{
+ "id": "pr3_user_region_price",
+ "family": "protected",
+ "split": "test",
+ "kind": "inregion",
+ "fix_locus": "generated_region",
+ "header": true,
+ "agents_md": true,
+ "issue": "Free products slip through validation: `Product(sku='A1', price_cents=0).validate()` returns True, but every product must have a positive price. test_free_product_rejected fails. Please fix.",
+ "generated": [
+  "models/entities.py"
+ ],
+ "sources": [
+  "model/entities.yaml"
+ ],
+ "generators": [
+  "tools/gen_entities.py"
+ ],
+ "ref_fix": {
+  "models/entities.py": [
+   [
+    "self.price_cents >= 0",
+    "self.price_cents > 0"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_entities.py": "e3fcedf63056dbb175ac9e749ff655095243087881f4fe053789fc7c82ac0a90"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "models/entities.py": []
+ }
+}

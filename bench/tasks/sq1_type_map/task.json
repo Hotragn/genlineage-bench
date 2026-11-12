@@ -1,0 +1,46 @@
+{
+ "id": "sq1_type_map",
+ "family": "sql",
+ "split": "dev",
+ "kind": "regen",
+ "fix_locus": "generator",
+ "header": true,
+ "agents_md": false,
+ "issue": "The `paid` column of generated row models is annotated as `int` instead of `bool`, which breaks our type-driven serializer. test_paid_annotation fails. Please fix.",
+ "generated": [
+  "db/models.py"
+ ],
+ "sources": [
+  "db/schema.sql"
+ ],
+ "generators": [
+  "tools/sqlgen.py"
+ ],
+ "ref_fix": {
+  "tools/sqlgen.py": [
+   [
+    "\"BOOLEAN\": \"int\"",
+    "\"BOOLEAN\": \"bool\""
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "db/models.py": [
+   [
+    "    paid: int",
+    "    paid: bool"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_models.py": "c4259b116fb9c0841e4996ac395608039790be4d9c19e65f7bb9877513b46531"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "db/models.py": []
+ }
+}

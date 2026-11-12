@@ -1,0 +1,37 @@
+{
+ "id": "oa4_control_paging",
+ "family": "openapi",
+ "split": "test",
+ "kind": "control",
+ "fix_locus": "hand",
+ "header": true,
+ "agents_md": false,
+ "issue": "`api.page_slices(10, 4)` should return [(0, 4), (4, 8), (8, 10)] but the last page is wrong. test_page_slices fails. Please fix.",
+ "generated": [
+  "client/models.py"
+ ],
+ "sources": [
+  "api/openapi.yaml"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "client/api.py": [
+   [
+    "s + page_size) for s",
+    "min(s + page_size, n_items)) for s"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/test_api.py": "7938b71252ccfe12a92ea6d26b17cb980088ed81fc72703f1a0ff4249d9f80a9",
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "client/models.py": []
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "pr2_spec_default",
+ "family": "protected",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": true,
+ "agents_md": true,
+ "issue": "Products created without a currency should default to EUR (we are an EU store), but `Product(sku='A', price_cents=1).currency` is 'USD'. test_default_currency fails. Please fix.",
+ "generated": [
+  "models/entities.py"
+ ],
+ "sources": [
+  "model/entities.yaml"
+ ],
+ "generators": [
+  "tools/gen_entities.py"
+ ],
+ "ref_fix": {
+  "model/entities.yaml": [
+   [
+    "default: USD",
+    "default: EUR"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "models/entities.py": [
+   [
+    "currency: str = 'USD'",
+    "currency: str = 'EUR'"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_entities.py": "2246cedb435b6e0c546da64c07cfa20e19b2d803701969fe4974e3ae381b59ca"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "models/entities.py": []
+ }
+}

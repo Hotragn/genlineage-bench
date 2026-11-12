@@ -1,0 +1,25 @@
+{
+ "commands": [
+  "make gen"
+ ],
+ "outputs": {
+  "yt_dlp/extractor/lazy_extractors.py": {
+   "command": "make gen",
+   "inputs": [
+    "Makefile",
+    "bundle/docker/linux/Dockerfile"
+   ],
+   "generators": [],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    "bundle/docker/linux/Dockerfile"
+   ],
+   "noisy_lines": 0
+  }
+ },
+ "seconds": 6978.53,
+ "regen_runs": 72,
+ "line_map": {}
+}

@@ -1,0 +1,39 @@
+{
+ "id": "pr1_user_region",
+ "family": "protected",
+ "split": "test",
+ "kind": "inregion",
+ "fix_locus": "generated_region",
+ "header": true,
+ "agents_md": false,
+ "issue": "A coupon with percent_off=100 (a free item promotion) is rejected by `Coupon.validate()`. 100 percent off must be allowed, values above 100 must not. test_full_discount fails. Please fix.",
+ "generated": [
+  "models/entities.py"
+ ],
+ "sources": [
+  "model/entities.yaml"
+ ],
+ "generators": [
+  "tools/gen_entities.py"
+ ],
+ "ref_fix": {
+  "models/entities.py": [
+   [
+    "0 < self.percent_off < 100",
+    "0 < self.percent_off <= 100"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_entities.py": "410f193af2b43194005e8a8579fc29d426ba245ba4a9ba991b0811f80c2d2583"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "models/entities.py": []
+ }
+}

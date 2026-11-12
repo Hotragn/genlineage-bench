@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+bench/_validate/
+.realrepos/
+bench/tasks_real/ry1_ytdlp_lazy_url/repo/
+bench/tasks_real/ry2_ytdlp_issue_template/repo/
+.cache/

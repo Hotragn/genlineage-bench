@@ -1,0 +1,80 @@
+{
+ "id": "ry2_ytdlp_issue_template",
+ "family": "ytdlp-issuetemplates",
+ "split": "real",
+ "kind": "regen",
+ "fix_locus": "spec",
+ "header": false,
+ "agents_md": false,
+ "issue": "Core bug reports are being filed without logs: the bug report issue form (.github/ISSUE_TEMPLATE/4_bug_report.yml) no longer makes the complete verbose output mandatory. test_bug_report_requires_verbose_log fails. Please fix.",
+ "generated": [
+  ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+  ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+  ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+  ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+  ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+  ".github/ISSUE_TEMPLATE/6_question.yml"
+ ],
+ "sources": [
+  ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml",
+  ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml",
+  ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml",
+  ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml",
+  ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml",
+  ".github/ISSUE_TEMPLATE_tmpl/6_question.yml"
+ ],
+ "generators": [
+  "devscripts/make_issue_template.py"
+ ],
+ "ref_fix": {
+  ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml": [
+   [
+    "\n  %(verbose_optional)s",
+    "\n  %(verbose)s"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "lineage_commands": [
+  "make gen"
+ ],
+ "upstream": {
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "trimmed": [
+   "test"
+  ],
+  "clean_regen_changed": [],
+  "bug_regen_changed": [
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml"
+  ],
+  "makefile": "real Makefile + appended `gen:` target"
+ },
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_issue_template.py": "98915b46da46d60a46022662ec9b4213f3eeadfb2503572f483796490f49151b"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  ".github/ISSUE_TEMPLATE/1_broken_site.yml": [],
+  ".github/ISSUE_TEMPLATE/2_site_support_request.yml": [],
+  ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": [],
+  ".github/ISSUE_TEMPLATE/4_bug_report.yml": [],
+  ".github/ISSUE_TEMPLATE/5_feature_request.yml": [],
+  ".github/ISSUE_TEMPLATE/6_question.yml": []
+ },
+ "gen_only_fix": {
+  ".github/ISSUE_TEMPLATE/4_bug_report.yml": [
+   [
+    "      options:\n        - label: Run **your** yt-dlp command with **-vU** flag added (`yt-dlp -vU <your command line>`)\n        - label: \"If using API, add `'verbose': True` to `YoutubeDL` params instead\"\n          required: false\n        - label: Copy the WHOLE output (starting with `[debug] Command-line config`) and insert it below\n  - type: textarea\n    id: log\n",
+    "      options:\n        - label: Run **your** yt-dlp command with **-vU** flag added (`yt-dlp -vU <your command line>`)\n          required: true\n        - label: \"If using API, add `'verbose': True` to `YoutubeDL` params instead\"\n          required: false\n        - label: Copy the WHOLE output (starting with `[debug] Command-line config`) and insert it below\n          required: true\n  - type: textarea\n    id: log\n"
+   ],
+   [
+    "        <more lines>\n      render: shell\n",
+    "        <more lines>\n      render: shell\n    validations:\n      required: true\n"
+   ]
+  ]
+ }
+}

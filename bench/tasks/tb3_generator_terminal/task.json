@@ -1,0 +1,46 @@
+{
+ "id": "tb3_generator_terminal",
+ "family": "table",
+ "split": "dev",
+ "kind": "regen",
+ "fix_locus": "generator",
+ "header": false,
+ "agents_md": false,
+ "issue": "`lifecycle.is_final(OrderStatus.PENDING)` returns True and delivered orders are not final. The terminal column in the status table is correct. test_terminal fails. Please fix.",
+ "generated": [
+  "orders/status.py"
+ ],
+ "sources": [
+  "data/order_status.csv"
+ ],
+ "generators": [
+  "scripts/gen_status.py"
+ ],
+ "ref_fix": {
+  "scripts/gen_status.py": [
+   [
+    "r['terminal'] == 'no'",
+    "r['terminal'] == 'yes'"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "orders/status.py": [
+   [
+    "TERMINAL = frozenset({OrderStatus.PENDING, OrderStatus.PAID, OrderStatus.SHIPPED})",
+    "TERMINAL = frozenset({OrderStatus.DELIVERED, OrderStatus.REFUNDED})"
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_status.py": "b5b3e6c5f43d5e82cb89b5a2397fd8cf6e93defe7381340f7a47e5e65efea176"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "orders/status.py": []
+ }
+}

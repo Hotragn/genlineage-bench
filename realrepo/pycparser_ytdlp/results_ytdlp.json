@@ -1,0 +1,243 @@
+{
+ "ytdlp_supportedsites": {
+  "spec": "ytdlp_supportedsites",
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "cmd": "python3 devscripts/make_supportedsites.py supportedsites.md",
+  "rc": 0,
+  "written": [
+   "supportedsites.md"
+  ],
+  "gt_out": [
+   "supportedsites.md"
+  ],
+  "source": "Makefile target supportedsites; generator imports every extractor in yt_dlp/extractor/",
+  "discovered_commands": [
+   "python devscripts/generate_aes_testdata.py",
+   "python devscripts/generate_third_party_licenses.py",
+   "python yt_dlp/extractor/generic.py",
+   "python yt_dlp/extractor/genericembeds.py",
+   "python yt_dlp/extractor/genius.py"
+  ],
+  "committed": {
+   "supportedsites.md": true
+  },
+  "committed_equals_regen": {
+   "supportedsites.md": true
+  },
+  "committed_diff_lines": {
+   "supportedsites.md": 0
+  },
+  "noise_lines": {
+   "supportedsites.md": 0
+  },
+  "n_declared": 941,
+  "sampled_declared": 25,
+  "declared_recall": "25/25",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {
+   "yt_dlp/dependencies/Cryptodome.py": "crash",
+   "yt_dlp/downloader/f4m.py": "crash",
+   "yt_dlp/downloader/fragment.py": "crash",
+   "yt_dlp/downloader/mhtml.py": "crash",
+   "yt_dlp/extractor/youtube/_base.py": "crash",
+   "yt_dlp/extractor/youtube/_notifications.py": "crash",
+   "yt_dlp/extractor/youtube/_video.py": "crash",
+   "yt_dlp/extractor/youtube/jsc/_builtin/bun.py": "crash",
+   "yt_dlp/extractor/youtube/jsc/_registry.py": "crash",
+   "yt_dlp/extractor/youtube/pot/_builtin/memory_cache.py": "crash",
+   "yt_dlp/extractor/youtube/pot/_director.py": "crash",
+   "yt_dlp/extractor/youtube/pot/cache.py": "crash",
+   "yt_dlp/networking/_helper.py": "crash",
+   "yt_dlp/networking/common.py": "crash",
+   "yt_dlp/plugins.py": "crash",
+   "yt_dlp/postprocessor/ffmpeg.py": "crash",
+   "yt_dlp/postprocessor/metadataparser.py": "crash"
+  },
+  "declared_kinds": {
+   "yt_dlp/extractor/aparat.py": "crash",
+   "yt_dlp/extractor/closertotruth.py": "crash",
+   "yt_dlp/extractor/cloudflarestream.py": "crash",
+   "yt_dlp/extractor/err.py": "crash",
+   "yt_dlp/extractor/funk.py": "crash",
+   "yt_dlp/extractor/globo.py": "crash",
+   "yt_dlp/extractor/hidive.py": "crash",
+   "yt_dlp/extractor/kaltura.py": "crash",
+   "yt_dlp/extractor/leeco.py": "crash",
+   "yt_dlp/extractor/lrt.py": "crash",
+   "yt_dlp/extractor/mave.py": "crash",
+   "yt_dlp/extractor/nebula.py": "crash",
+   "yt_dlp/extractor/nexx.py": "crash",
+   "yt_dlp/extractor/noodlemagazine.py": "crash",
+   "yt_dlp/extractor/npo.py": "crash",
+   "yt_dlp/extractor/popcorntv.py": "crash",
+   "yt_dlp/extractor/thehighwire.py": "crash",
+   "yt_dlp/extractor/thestar.py": "crash",
+   "yt_dlp/extractor/tumblr.py": "crash",
+   "yt_dlp/extractor/ustudio.py": "crash",
+   "yt_dlp/extractor/vidlii.py": "crash",
+   "yt_dlp/extractor/ximalaya.py": "crash",
+   "yt_dlp/extractor/xminus.py": "crash",
+   "yt_dlp/extractor/zaiko.py": "crash",
+   "yt_dlp/extractor/zype.py": "crash"
+  },
+  "gate": [],
+  "regen_runs": 67,
+  "seconds": 82.3,
+  "out_precision": "1/1",
+  "out_recall": "1/1"
+ },
+ "ytdlp_issuetemplates": {
+  "spec": "ytdlp_issuetemplates",
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "cmd": "python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml .github/ISSUE_TEMPLATE/1_broken_site.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml .github/ISSUE_TEMPLATE/2_site_support_request.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml .github/ISSUE_TEMPLATE/3_site_feature_request.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml .github/ISSUE_TEMPLATE/4_bug_report.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml .github/ISSUE_TEMPLATE/5_feature_request.yml && python3 devscripts/make_issue_template.py .github/ISSUE_TEMPLATE_tmpl/6_question.yml .github/ISSUE_TEMPLATE/6_question.yml",
+  "rc": 0,
+  "written": [
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/6_question.yml"
+  ],
+  "gt_out": [
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml",
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml",
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml",
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml",
+   ".github/ISSUE_TEMPLATE/6_question.yml"
+  ],
+  "source": "Makefile target issuetemplates (prerequisites list the _tmpl files, the script and yt_dlp/version.py)",
+  "discovered_commands": [
+   "python devscripts/generate_aes_testdata.py",
+   "python devscripts/generate_third_party_licenses.py",
+   "python yt_dlp/extractor/generic.py",
+   "python yt_dlp/extractor/genericembeds.py",
+   "python yt_dlp/extractor/genius.py"
+  ],
+  "committed": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": true,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": true,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": true,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/6_question.yml": true
+  },
+  "committed_equals_regen": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": true,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": true,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": true,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": true,
+   ".github/ISSUE_TEMPLATE/6_question.yml": true
+  },
+  "committed_diff_lines": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": 0,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 0,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/6_question.yml": 0
+  },
+  "noise_lines": {
+   ".github/ISSUE_TEMPLATE/1_broken_site.yml": 0,
+   ".github/ISSUE_TEMPLATE/2_site_support_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/3_site_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/4_bug_report.yml": 0,
+   ".github/ISSUE_TEMPLATE/5_feature_request.yml": 0,
+   ".github/ISSUE_TEMPLATE/6_question.yml": 0
+  },
+  "n_declared": 8,
+  "sampled_declared": 8,
+  "declared_recall": "7/8",
+  "missed_declared": [
+   "yt_dlp/version.py"
+  ],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {},
+  "declared_kinds": {
+   ".github/ISSUE_TEMPLATE_tmpl/1_broken_site.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/2_site_support_request.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/3_site_feature_request.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/4_bug_report.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/5_feature_request.yml": "crash",
+   ".github/ISSUE_TEMPLATE_tmpl/6_question.yml": "crash",
+   "devscripts/make_issue_template.py": "crash",
+   "yt_dlp/version.py": "none"
+  },
+  "gate": [],
+  "regen_runs": 50,
+  "seconds": 20.7,
+  "out_precision": "6/6",
+  "out_recall": "6/6"
+ },
+ "ytdlp_readme": {
+  "spec": "ytdlp_readme",
+  "repo": "yt-dlp",
+  "commit": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+  "cmd": "COLUMNS=80 python3 yt_dlp/__main__.py --ignore-config --help | python3 devscripts/make_readme.py",
+  "rc": 0,
+  "written": [
+   "README.md"
+  ],
+  "gt_out": [
+   "README.md"
+  ],
+  "source": "Makefile rule 'README.md: $(PY_CODE_FILES) devscripts/make_readme.py'; the script replaces only the options section of the hand-written README.md",
+  "discovered_commands": [
+   "python devscripts/generate_aes_testdata.py",
+   "python devscripts/generate_third_party_licenses.py",
+   "python yt_dlp/extractor/generic.py",
+   "python yt_dlp/extractor/genericembeds.py",
+   "python yt_dlp/extractor/genius.py"
+  ],
+  "committed": {
+   "README.md": true
+  },
+  "committed_equals_regen": {
+   "README.md": false
+  },
+  "committed_diff_lines": {
+   "README.md": 1
+  },
+  "noise_lines": {
+   "README.md": 0
+  },
+  "n_declared": 3,
+  "sampled_declared": 3,
+  "declared_recall": "3/3",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {
+   "yt_dlp/downloader/niconico.py": "crash",
+   "yt_dlp/postprocessor/exec.py": "crash",
+   "yt_dlp/update.py": "crash"
+  },
+  "declared_kinds": {
+   "README.md": "crash",
+   "devscripts/make_readme.py": "crash",
+   "yt_dlp/options.py": "crash"
+  },
+  "gate": [
+   {
+    "file": "README.md",
+    "edit": "'Print program version and exit' -> 'Print program version and exit (hand edit)'",
+    "verdict": "lost",
+    "expected": "lost"
+   },
+   {
+    "file": "README.md",
+    "edit": "'# INSTALLATION' -> '# INSTALLATION (hand edit)'",
+    "verdict": "kept",
+    "expected": "kept"
+   }
+  ],
+  "regen_runs": 47,
+  "seconds": 28.2,
+  "out_precision": "1/1",
+  "out_recall": "1/1"
+ }
+}

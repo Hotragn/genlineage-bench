@@ -1,0 +1,12 @@
+# gitleaks false positives: SHA-256 file hashes next to file names containing 'api', and a Linux enum in a pycparser test input.
+bench/tasks/oa4_control_paging/task.json:generic-api-key:28
+bench/tasks_real/rp1_pycparser_if_else/repo/utils/benchmark/inputs/linux-uapi.c.ppout:generic-api-key:7683
+bench/tasks_real/rp2_pycparser_structref/repo/utils/benchmark/inputs/linux-uapi.c.ppout:generic-api-key:7683
+bench/tasks_real/ry2_ytdlp_issue_template/upstream_manifest.json:generic-api-key:90
+bench/tasks_real/ry2_ytdlp_issue_template/upstream_manifest.json:generic-api-key:774
+bench/tasks_real/ry2_ytdlp_issue_template/upstream_manifest.json:generic-api-key:1120
+bench/tasks_real/ry1_ytdlp_lazy_url/upstream_manifest.json:generic-api-key:90
+bench/tasks_real/ry1_ytdlp_lazy_url/upstream_manifest.json:generic-api-key:775
+bench/tasks_real/ry1_ytdlp_lazy_url/upstream_manifest.json:generic-api-key:1121
+bench/tasks_real/rp1_pycparser_if_else/repo/utils/benchmark/inputs/linux-uapi.c.ppout:generic-api-key:8234
+bench/tasks_real/rp2_pycparser_structref/repo/utils/benchmark/inputs/linux-uapi.c.ppout:generic-api-key:8234

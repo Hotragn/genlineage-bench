@@ -1,0 +1,455 @@
+{
+ "directed": true,
+ "multigraph": true,
+ "graph": {
+  "name": "pb2_enum_missing",
+  "commands": [
+   "make gen"
+  ],
+  "inference_seconds": 3.53,
+  "regen_runs": 27
+ },
+ "nodes": [
+  {
+   "id": "file:gen/acct/v1/team_pb2.py",
+   "kind": "file",
+   "path": "gen/acct/v1/team_pb2.py",
+   "role": "output",
+   "noisy_lines": 0
+  },
+  {
+   "id": "cmd:make gen",
+   "kind": "command",
+   "command": "make gen"
+  },
+  {
+   "id": "file:Makefile",
+   "kind": "file",
+   "path": "Makefile",
+   "role": "build"
+  },
+  {
+   "id": "file:proto/acct/v1/team.proto",
+   "kind": "file",
+   "path": "proto/acct/v1/team.proto",
+   "role": "input"
+  },
+  {
+   "id": "file:proto/acct/v1/user.proto",
+   "kind": "file",
+   "path": "proto/acct/v1/user.proto",
+   "role": "input"
+  },
+  {
+   "id": "file:gen/acct/v1/user_pb2.py",
+   "kind": "file",
+   "path": "gen/acct/v1/user_pb2.py",
+   "role": "output",
+   "noisy_lines": 0
+  },
+  {
+   "id": "line:proto/acct/v1/team.proto:5",
+   "kind": "line",
+   "path": "proto/acct/v1/team.proto",
+   "line": 5,
+   "text": "int64 id = 1;"
+  },
+  {
+   "id": "line:gen/acct/v1/team_pb2.py:28",
+   "kind": "line",
+   "path": "gen/acct/v1/team_pb2.py",
+   "line": 28
+  },
+  {
+   "id": "line:gen/acct/v1/team_pb2.py:36",
+   "kind": "line",
+   "path": "gen/acct/v1/team_pb2.py",
+   "line": 36
+  },
+  {
+   "id": "line:proto/acct/v1/team.proto:6",
+   "kind": "line",
+   "path": "proto/acct/v1/team.proto",
+   "line": 6,
+   "text": "string title = 2;"
+  },
+  {
+   "id": "line:proto/acct/v1/team.proto:7",
+   "kind": "line",
+   "path": "proto/acct/v1/team.proto",
+   "line": 7,
+   "text": "repeated User members = 3;"
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:2",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 2,
+   "text": "package acct.v1;"
+  },
+  {
+   "id": "line:gen/acct/v1/user_pb2.py:27",
+   "kind": "line",
+   "path": "gen/acct/v1/user_pb2.py",
+   "line": 27
+  },
+  {
+   "id": "line:gen/acct/v1/user_pb2.py:34",
+   "kind": "line",
+   "path": "gen/acct/v1/user_pb2.py",
+   "line": 34
+  },
+  {
+   "id": "line:gen/acct/v1/user_pb2.py:35",
+   "kind": "line",
+   "path": "gen/acct/v1/user_pb2.py",
+   "line": 35
+  },
+  {
+   "id": "line:gen/acct/v1/user_pb2.py:36",
+   "kind": "line",
+   "path": "gen/acct/v1/user_pb2.py",
+   "line": 36
+  },
+  {
+   "id": "line:gen/acct/v1/user_pb2.py:37",
+   "kind": "line",
+   "path": "gen/acct/v1/user_pb2.py",
+   "line": 37
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:6",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 6,
+   "text": "MEMBER = 1;"
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:7",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 7,
+   "text": "ADMIN = 2;"
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:11",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 11,
+   "text": "int64 id = 1;"
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:12",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 12,
+   "text": "string name = 2;"
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:13",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 13,
+   "text": "string email = 3;"
+  },
+  {
+   "id": "line:proto/acct/v1/user.proto:14",
+   "kind": "line",
+   "path": "proto/acct/v1/user.proto",
+   "line": 14,
+   "text": "Role role = 4;"
+  }
+ ],
+ "links": [
+  {
+   "source": "file:gen/acct/v1/team_pb2.py",
+   "target": "cmd:make gen",
+   "type": "produced_by"
+  },
+  {
+   "source": "file:gen/acct/v1/team_pb2.py",
+   "target": "file:Makefile",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:gen/acct/v1/team_pb2.py",
+   "target": "file:proto/acct/v1/team.proto",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:gen/acct/v1/team_pb2.py",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:gen/acct/v1/user_pb2.py",
+   "target": "cmd:make gen",
+   "type": "produced_by"
+  },
+  {
+   "source": "file:gen/acct/v1/user_pb2.py",
+   "target": "file:Makefile",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:gen/acct/v1/user_pb2.py",
+   "target": "file:proto/acct/v1/team.proto",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:gen/acct/v1/user_pb2.py",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "generated_from"
+  },
+  {
+   "source": "line:proto/acct/v1/team.proto:5",
+   "target": "file:proto/acct/v1/team.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:28",
+   "target": "file:gen/acct/v1/team_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:28",
+   "target": "line:proto/acct/v1/team.proto:5",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:36",
+   "target": "file:gen/acct/v1/team_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:36",
+   "target": "line:proto/acct/v1/team.proto:5",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/team.proto:6",
+   "target": "file:proto/acct/v1/team.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:28",
+   "target": "line:proto/acct/v1/team.proto:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:36",
+   "target": "line:proto/acct/v1/team.proto:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/team.proto:7",
+   "target": "file:proto/acct/v1/team.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:28",
+   "target": "line:proto/acct/v1/team.proto:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:36",
+   "target": "line:proto/acct/v1/team.proto:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:2",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:28",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/team_pb2.py:36",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "file:gen/acct/v1/user_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:34",
+   "target": "file:gen/acct/v1/user_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:34",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "file:gen/acct/v1/user_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:36",
+   "target": "file:gen/acct/v1/user_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:36",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:37",
+   "target": "file:gen/acct/v1/user_pb2.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:37",
+   "target": "line:proto/acct/v1/user.proto:2",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:6",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:7",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:7",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:11",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:11",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:34",
+   "target": "line:proto/acct/v1/user.proto:11",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:11",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:37",
+   "target": "line:proto/acct/v1/user.proto:11",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:12",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:34",
+   "target": "line:proto/acct/v1/user.proto:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:37",
+   "target": "line:proto/acct/v1/user.proto:12",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:13",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:13",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:34",
+   "target": "line:proto/acct/v1/user.proto:13",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:13",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:37",
+   "target": "line:proto/acct/v1/user.proto:13",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:proto/acct/v1/user.proto:14",
+   "target": "file:proto/acct/v1/user.proto",
+   "type": "part_of"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:27",
+   "target": "line:proto/acct/v1/user.proto:14",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:34",
+   "target": "line:proto/acct/v1/user.proto:14",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:35",
+   "target": "line:proto/acct/v1/user.proto:14",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:gen/acct/v1/user_pb2.py:37",
+   "target": "line:proto/acct/v1/user.proto:14",
+   "type": "derived_from"
+  }
+ ]
+}

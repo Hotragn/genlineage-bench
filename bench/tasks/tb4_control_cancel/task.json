@@ -1,0 +1,39 @@
+{
+ "id": "tb4_control_cancel",
+ "family": "table",
+ "split": "dev",
+ "kind": "control",
+ "fix_locus": "hand",
+ "header": true,
+ "agents_md": true,
+ "issue": "Paid orders cannot be cancelled anymore: `lifecycle.can_cancel(OrderStatus.PAID)` is False, but orders may be cancelled until they ship. test_cancel fails. Please fix.",
+ "generated": [
+  "orders/status.py"
+ ],
+ "sources": [
+  "data/order_status.csv"
+ ],
+ "generators": [
+  "scripts/gen_status.py"
+ ],
+ "ref_fix": {
+  "orders/lifecycle.py": [
+   [
+    "status < OrderStatus.PAID",
+    "status < OrderStatus.SHIPPED"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_status.py": "74f2f449e99b70bed391dd406d71bb58217721c62453ed4ca3291026bf4053dc"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "orders/status.py": []
+ }
+}

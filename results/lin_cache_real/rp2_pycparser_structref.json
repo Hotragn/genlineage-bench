@@ -1,0 +1,28 @@
+{
+ "commands": [
+  "make gen"
+ ],
+ "outputs": {
+  "pycparser/c_ast.py": {
+   "command": "make gen",
+   "inputs": [
+    "Makefile",
+    "pycparser/_ast_gen.py",
+    "pycparser/_c_ast.cfg"
+   ],
+   "generators": [
+    "pycparser/_ast_gen.py"
+   ],
+   "build": [
+    "Makefile"
+   ],
+   "specs": [
+    "pycparser/_c_ast.cfg"
+   ],
+   "noisy_lines": 0
+  }
+ },
+ "seconds": 4.83,
+ "regen_runs": 62,
+ "line_map": {}
+}

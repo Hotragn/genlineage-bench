@@ -1,0 +1,10 @@
+# Rendered from templates/flags.py.j2 by tools/render.py. DO NOT EDIT.
+ENABLED = frozenset({
+{%- for f in features[:-1] %}
+    {{ f | tojson }},
+{%- endfor %}
+})
+
+
+def is_enabled(name):
+    return name in ENABLED

@@ -1,0 +1,9 @@
+[
+ {
+  "model": "k_12b",
+  "cond": "natural",
+  "seed": 1,
+  "task": "pr4_field_plus_region",
+  "stop": "api_error: HTTP Error 500: Internal Server Error"
+ }
+]

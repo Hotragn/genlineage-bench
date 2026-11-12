@@ -1,0 +1,46 @@
+{
+ "grpc": {
+  "repo": "grpc",
+  "cmd": "python -m grpc_tools.protoc -I../../protos --python_out=. --pyi_out=. --grpc_python_out=. ../../protos/helloworld.proto",
+  "rc": 0,
+  "written": [
+   "examples/python/helloworld/helloworld_pb2.py",
+   "examples/python/helloworld/helloworld_pb2.pyi",
+   "examples/python/helloworld/helloworld_pb2_grpc.py"
+  ],
+  "gt_out": [
+   "examples/python/helloworld/helloworld_pb2.py",
+   "examples/python/helloworld/helloworld_pb2.pyi",
+   "examples/python/helloworld/helloworld_pb2_grpc.py"
+  ],
+  "source": "grpc.io Python quickstart codegen command; sparse checkout of examples/python/helloworld and examples/protos",
+  "committed": {
+   "examples/python/helloworld/helloworld_pb2.py": true,
+   "examples/python/helloworld/helloworld_pb2.pyi": true,
+   "examples/python/helloworld/helloworld_pb2_grpc.py": true
+  },
+  "committed_equals_regen": {
+   "examples/python/helloworld/helloworld_pb2.py": false,
+   "examples/python/helloworld/helloworld_pb2.pyi": true,
+   "examples/python/helloworld/helloworld_pb2_grpc.py": false
+  },
+  "noise_lines": {
+   "examples/python/helloworld/helloworld_pb2.py": 0,
+   "examples/python/helloworld/helloworld_pb2.pyi": 0,
+   "examples/python/helloworld/helloworld_pb2_grpc.py": 0
+  },
+  "n_declared": 1,
+  "sampled_declared": 1,
+  "declared_recall": "1/1",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {},
+  "declared_kinds": {
+   "examples/protos/helloworld.proto": "crash"
+  },
+  "regen_runs": 43,
+  "seconds": 2.3,
+  "out_precision": "3/3",
+  "out_recall": "3/3"
+ }
+}

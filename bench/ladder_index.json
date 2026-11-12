@@ -1,0 +1,392 @@
+{
+ "pb1_field_typo__L0": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "pb1_field_typo"
+ },
+ "pb1_field_typo__L1": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "pb1_field_typo"
+ },
+ "pb1_field_typo__L2": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "pb1_field_typo"
+ },
+ "pb2_enum_missing__L0": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "pb2_enum_missing"
+ },
+ "pb2_enum_missing__L1": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "pb2_enum_missing"
+ },
+ "pb2_enum_missing__L2": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "pb2_enum_missing"
+ },
+ "oa1_property_typo__L0": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "oa1_property_typo"
+ },
+ "oa1_property_typo__L1": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "oa1_property_typo"
+ },
+ "oa1_property_typo__L2": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "oa1_property_typo"
+ },
+ "oa2_constraint__L0": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "oa2_constraint"
+ },
+ "oa2_constraint__L1": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "oa2_constraint"
+ },
+ "oa2_constraint__L2": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "oa2_constraint"
+ },
+ "oa3_enum_value__L0": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "oa3_enum_value"
+ },
+ "oa3_enum_value__L1": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "oa3_enum_value"
+ },
+ "oa3_enum_value__L2": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "oa3_enum_value"
+ },
+ "oa5_ref_schema__L0": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "oa5_ref_schema"
+ },
+ "oa5_ref_schema__L1": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "oa5_ref_schema"
+ },
+ "oa5_ref_schema__L2": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "oa5_ref_schema"
+ },
+ "jj1_feature_typo__L0": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "jj1_feature_typo"
+ },
+ "jj1_feature_typo__L1": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "jj1_feature_typo"
+ },
+ "jj1_feature_typo__L2": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "jj1_feature_typo"
+ },
+ "jj2_template_bool__L0": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "jj2_template_bool"
+ },
+ "jj2_template_bool__L1": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "jj2_template_bool"
+ },
+ "jj2_template_bool__L2": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "jj2_template_bool"
+ },
+ "jj3_template_slice__L0": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "jj3_template_slice"
+ },
+ "jj3_template_slice__L1": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "jj3_template_slice"
+ },
+ "jj3_template_slice__L2": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "jj3_template_slice"
+ },
+ "lk1_decimal_token__L0": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "lk1_decimal_token"
+ },
+ "lk1_decimal_token__L1": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "lk1_decimal_token"
+ },
+ "lk1_decimal_token__L2": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "lk1_decimal_token"
+ },
+ "lk2_keyword_typo__L0": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "lk2_keyword_typo"
+ },
+ "lk2_keyword_typo__L1": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "lk2_keyword_typo"
+ },
+ "lk2_keyword_typo__L2": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "lk2_keyword_typo"
+ },
+ "pr2_spec_default__L0": {
+  "family": "protected",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "pr2_spec_default"
+ },
+ "pr2_spec_default__L1": {
+  "family": "protected",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "pr2_spec_default"
+ },
+ "pr2_spec_default__L2": {
+  "family": "protected",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "pr2_spec_default"
+ },
+ "pr4_field_plus_region__L0": {
+  "family": "protected",
+  "split": "test",
+  "kind": "mixed",
+  "fix_locus": "spec+generated_region",
+  "header": false,
+  "agents_md": false,
+  "ladder_level": 0,
+  "ladder_base": "pr4_field_plus_region"
+ },
+ "pr4_field_plus_region__L1": {
+  "family": "protected",
+  "split": "test",
+  "kind": "mixed",
+  "fix_locus": "spec+generated_region",
+  "header": true,
+  "agents_md": false,
+  "ladder_level": 1,
+  "ladder_base": "pr4_field_plus_region"
+ },
+ "pr4_field_plus_region__L2": {
+  "family": "protected",
+  "split": "test",
+  "kind": "mixed",
+  "fix_locus": "spec+generated_region",
+  "header": true,
+  "agents_md": true,
+  "ladder_level": 2,
+  "ladder_base": "pr4_field_plus_region"
+ }
+}

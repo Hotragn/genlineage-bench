@@ -1,0 +1,41 @@
+{
+ "id": "pb3_control_display",
+ "family": "protobuf",
+ "split": "test",
+ "kind": "control",
+ "fix_locus": "hand",
+ "header": true,
+ "agents_md": true,
+ "issue": "`service.display_name()` shows `Ada <>` for users without an email address; it should show just `Ada`. test_display_without_email fails. Please fix.",
+ "generated": [
+  "gen/acct/v1/user_pb2.py",
+  "gen/acct/v1/team_pb2.py"
+ ],
+ "sources": [
+  "proto/acct/v1/user.proto",
+  "proto/acct/v1/team.proto"
+ ],
+ "generators": [],
+ "ref_fix": {
+  "app/service.py": [
+   [
+    "    return f\"{user.name} <{user.email}>\"",
+    "    if user.email:\n        return f\"{user.name} <{user.email}>\"\n    return user.name"
+   ]
+  ]
+ },
+ "gen_only_fix": null,
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_service.py": "4810cc851b250f02c821092d6ab635c8aba613bc3fbc734fa52f820534f1fe01",
+  "tests/conftest_path.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "gen/acct/v1/user_pb2.py": [],
+  "gen/acct/v1/team_pb2.py": []
+ }
+}

@@ -1,0 +1,5 @@
+service_name: orders
+timeout_seconds: 30
+retries: 3
+debug: false
+use_cache: true

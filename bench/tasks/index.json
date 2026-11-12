@@ -1,0 +1,210 @@
+{
+ "pb1_field_typo": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false
+ },
+ "pb2_enum_missing": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true
+ },
+ "pb3_control_display": {
+  "family": "protobuf",
+  "split": "test",
+  "kind": "control",
+  "fix_locus": "hand",
+  "header": true,
+  "agents_md": true
+ },
+ "oa1_property_typo": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false
+ },
+ "oa2_constraint": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": true
+ },
+ "oa3_enum_value": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": false
+ },
+ "oa4_control_paging": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "control",
+  "fix_locus": "hand",
+  "header": true,
+  "agents_md": false
+ },
+ "oa5_ref_schema": {
+  "family": "openapi",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true
+ },
+ "jj1_feature_typo": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false
+ },
+ "jj2_template_bool": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": false,
+  "agents_md": false
+ },
+ "jj3_template_slice": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "template",
+  "header": true,
+  "agents_md": true
+ },
+ "jj4_control_backoff": {
+  "family": "jinja",
+  "split": "test",
+  "kind": "control",
+  "fix_locus": "hand",
+  "header": true,
+  "agents_md": true
+ },
+ "lk1_decimal_token": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": false
+ },
+ "lk2_keyword_typo": {
+  "family": "lark",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true
+ },
+ "lk3_control_div": {
+  "family": "lark",
+  "split": "test",
+  "kind": "control",
+  "fix_locus": "hand",
+  "header": true,
+  "agents_md": false
+ },
+ "pr1_user_region": {
+  "family": "protected",
+  "split": "test",
+  "kind": "inregion",
+  "fix_locus": "generated_region",
+  "header": true,
+  "agents_md": false
+ },
+ "pr2_spec_default": {
+  "family": "protected",
+  "split": "test",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": true,
+  "agents_md": true
+ },
+ "tb1_generator_slice": {
+  "family": "table",
+  "split": "dev",
+  "kind": "regen",
+  "fix_locus": "generator",
+  "header": true,
+  "agents_md": false
+ },
+ "tb2_data_code": {
+  "family": "table",
+  "split": "dev",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": true
+ },
+ "tb3_generator_terminal": {
+  "family": "table",
+  "split": "dev",
+  "kind": "regen",
+  "fix_locus": "generator",
+  "header": false,
+  "agents_md": false
+ },
+ "tb4_control_cancel": {
+  "family": "table",
+  "split": "dev",
+  "kind": "control",
+  "fix_locus": "hand",
+  "header": true,
+  "agents_md": true
+ },
+ "sq1_type_map": {
+  "family": "sql",
+  "split": "dev",
+  "kind": "regen",
+  "fix_locus": "generator",
+  "header": true,
+  "agents_md": false
+ },
+ "sq2_ddl_nullable": {
+  "family": "sql",
+  "split": "dev",
+  "kind": "regen",
+  "fix_locus": "spec",
+  "header": false,
+  "agents_md": true
+ },
+ "sq3_control_revenue": {
+  "family": "sql",
+  "split": "dev",
+  "kind": "control",
+  "fix_locus": "hand",
+  "header": true,
+  "agents_md": false
+ },
+ "pr3_user_region_price": {
+  "family": "protected",
+  "split": "test",
+  "kind": "inregion",
+  "fix_locus": "generated_region",
+  "header": true,
+  "agents_md": true
+ },
+ "pr4_field_plus_region": {
+  "family": "protected",
+  "split": "test",
+  "kind": "mixed",
+  "fix_locus": "spec+generated_region",
+  "header": true,
+  "agents_md": false
+ }
+}

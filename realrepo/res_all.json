@@ -1,0 +1,270 @@
+{
+ "aiohttp": {
+  "repo": "aiohttp",
+  "cmd": "python tools/gen.py",
+  "rc": 0,
+  "written": [
+   "aiohttp/_find_header.c",
+   "aiohttp/_headers.pxi"
+  ],
+  "gt_out": [
+   "aiohttp/_find_header.c",
+   "aiohttp/_headers.pxi"
+  ],
+  "source": "Makefile rule 'aiohttp/_find_header.c: $(call to-hash,aiohttp/hdrs.py ./tools/gen.py)'; .pxi named only in a comment",
+  "committed": {
+   "aiohttp/_find_header.c": false,
+   "aiohttp/_headers.pxi": false
+  },
+  "committed_equals_regen": {},
+  "noise_lines": {
+   "aiohttp/_find_header.c": 0,
+   "aiohttp/_headers.pxi": 0
+  },
+  "n_declared": 2,
+  "sampled_declared": 2,
+  "declared_recall": "2/2",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {},
+  "declared_kinds": {
+   "aiohttp/hdrs.py": "crash",
+   "tools/gen.py": "crash"
+  },
+  "regen_runs": 44,
+  "seconds": 5.3,
+  "out_precision": "2/2",
+  "out_recall": "2/2"
+ },
+ "black": {
+  "repo": "black",
+  "cmd": "python scripts/generate_schema.py --outfile src/black/resources/black.schema.json",
+  "rc": 0,
+  "written": [
+   "src/black/resources/black.schema.json"
+  ],
+  "gt_out": [
+   "src/black/resources/black.schema.json"
+  ],
+  "source": "tox env 'generate_schema'; options are declared in src/black/__init__.py",
+  "committed": {
+   "src/black/resources/black.schema.json": true
+  },
+  "committed_equals_regen": {
+   "src/black/resources/black.schema.json": true
+  },
+  "noise_lines": {
+   "src/black/resources/black.schema.json": 0
+  },
+  "n_declared": 2,
+  "sampled_declared": 2,
+  "declared_recall": "2/2",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {
+   "src/black/brackets.py": "crash",
+   "src/black/comments.py": "crash",
+   "src/black/const.py": "crash",
+   "src/black/files.py": "crash",
+   "src/black/handle_ipynb_magics.py": "crash",
+   "src/black/mode.py": "crash",
+   "src/black/report.py": "crash",
+   "src/black/strings.py": "crash",
+   "src/blib2to3/pgen2/driver.py": "crash",
+   "src/blib2to3/pgen2/token.py": "crash",
+   "src/blib2to3/pytree.py": "crash"
+  },
+  "declared_kinds": {
+   "scripts/generate_schema.py": "crash",
+   "src/black/__init__.py": "content"
+  },
+  "regen_runs": 44,
+  "seconds": 13.3,
+  "out_precision": "1/1",
+  "out_recall": "1/1"
+ },
+ "rich": {
+  "repo": "rich",
+  "cmd": "python make_width_tables.py",
+  "rc": 0,
+  "written": [
+   "rich/_unicode_data/_versions.py",
+   "rich/_unicode_data/unicode18-0-0.py"
+  ],
+  "gt_out": [
+   "rich/_unicode_data/_versions.py",
+   "rich/_unicode_data/unicode10-0-0.py",
+   "rich/_unicode_data/unicode11-0-0.py",
+   "rich/_unicode_data/unicode12-0-0.py",
+   "rich/_unicode_data/unicode12-1-0.py",
+   "rich/_unicode_data/unicode13-0-0.py",
+   "rich/_unicode_data/unicode14-0-0.py",
+   "rich/_unicode_data/unicode15-0-0.py",
+   "rich/_unicode_data/unicode15-1-0.py",
+   "rich/_unicode_data/unicode16-0-0.py",
+   "rich/_unicode_data/unicode17-0-0.py",
+   "rich/_unicode_data/unicode4-1-0.py",
+   "rich/_unicode_data/unicode5-0-0.py",
+   "rich/_unicode_data/unicode5-1-0.py",
+   "rich/_unicode_data/unicode5-2-0.py",
+   "rich/_unicode_data/unicode6-0-0.py",
+   "rich/_unicode_data/unicode6-1-0.py",
+   "rich/_unicode_data/unicode6-2-0.py",
+   "rich/_unicode_data/unicode6-3-0.py",
+   "rich/_unicode_data/unicode7-0-0.py",
+   "rich/_unicode_data/unicode8-0-0.py",
+   "rich/_unicode_data/unicode9-0-0.py"
+  ],
+  "source": "tools/make_width_tables.py header; writes rich/_unicode_data/*.py from the wcwidth package",
+  "committed": {
+   "rich/_unicode_data/_versions.py": true,
+   "rich/_unicode_data/unicode18-0-0.py": false
+  },
+  "committed_equals_regen": {
+   "rich/_unicode_data/_versions.py": false
+  },
+  "noise_lines": {
+   "rich/_unicode_data/_versions.py": 0,
+   "rich/_unicode_data/unicode18-0-0.py": 0
+  },
+  "n_declared": 2,
+  "sampled_declared": 2,
+  "declared_recall": "2/2",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {
+   "rich/_extension.py": "crash"
+  },
+  "declared_kinds": {
+   "rich/cells.py": "crash",
+   "tools/make_width_tables.py": "crash"
+  },
+  "regen_runs": 44,
+  "seconds": 5.5,
+  "out_precision": "1/2",
+  "out_recall": "1/22"
+ },
+ "pygments": {
+  "repo": "pygments",
+  "cmd": "python scripts/gen_mapfiles.py",
+  "rc": 0,
+  "written": [
+   "pygments/formatters/_mapping.py",
+   "pygments/lexers/_mapping.py",
+   "pygments/styles/_mapping.py"
+  ],
+  "gt_out": [
+   "pygments/lexers/_mapping.py",
+   "pygments/formatters/_mapping.py",
+   "pygments/styles/_mapping.py"
+  ],
+  "source": "tox env 'mapfiles'; generator walks pygments/{lexers,formatters,styles}/*.py",
+  "committed": {
+   "pygments/formatters/_mapping.py": true,
+   "pygments/lexers/_mapping.py": true,
+   "pygments/styles/_mapping.py": true
+  },
+  "committed_equals_regen": {
+   "pygments/formatters/_mapping.py": true,
+   "pygments/lexers/_mapping.py": true,
+   "pygments/styles/_mapping.py": true
+  },
+  "noise_lines": {
+   "pygments/formatters/_mapping.py": 0,
+   "pygments/lexers/_mapping.py": 0,
+   "pygments/styles/_mapping.py": 0
+  },
+  "n_declared": 324,
+  "sampled_declared": 25,
+  "declared_recall": "25/25",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {
+   "pygments/filter.py": "crash",
+   "pygments/filters/__init__.py": "crash",
+   "pygments/lexer.py": "crash",
+   "pygments/modeline.py": "crash",
+   "pygments/plugin.py": "crash",
+   "pygments/regexopt.py": "crash",
+   "pygments/scanner.py": "crash",
+   "pygments/style.py": "crash",
+   "pygments/unistring.py": "crash",
+   "pygments/util.py": "crash"
+  },
+  "declared_kinds": {
+   "pygments/lexers/_googlesql_builtins.py": "crash",
+   "pygments/lexers/_stata_builtins.py": "crash",
+   "pygments/lexers/ampl.py": "content",
+   "pygments/lexers/apl.py": "content",
+   "pygments/lexers/carbon.py": "content",
+   "pygments/lexers/clean.py": "content",
+   "pygments/lexers/freefem.py": "content",
+   "pygments/lexers/hdl.py": "content",
+   "pygments/lexers/igor.py": "content",
+   "pygments/lexers/julia.py": "crash",
+   "pygments/lexers/markup.py": "crash",
+   "pygments/lexers/maxima.py": "content",
+   "pygments/lexers/ncl.py": "content",
+   "pygments/lexers/pddl.py": "content",
+   "pygments/lexers/q.py": "content",
+   "pygments/lexers/rita.py": "content",
+   "pygments/lexers/scdoc.py": "content",
+   "pygments/lexers/textfmts.py": "crash",
+   "pygments/lexers/tls.py": "content",
+   "pygments/lexers/verification.py": "content",
+   "pygments/lexers/vyper.py": "content",
+   "pygments/lexers/yang.py": "content",
+   "pygments/styles/manni.py": "content",
+   "pygments/styles/pastie.py": "content",
+   "pygments/styles/stata_light.py": "content"
+  },
+  "regen_runs": 67,
+  "seconds": 43.4,
+  "out_precision": "3/3",
+  "out_recall": "3/3"
+ },
+ "grpc": {
+  "repo": "grpc",
+  "cmd": "python -m grpc_tools.protoc -I../../protos --python_out=. --pyi_out=. --grpc_python_out=. ../../protos/helloworld.proto",
+  "rc": 0,
+  "written": [
+   "examples/python/helloworld/helloworld_pb2.py",
+   "examples/python/helloworld/helloworld_pb2.pyi",
+   "examples/python/helloworld/helloworld_pb2_grpc.py"
+  ],
+  "gt_out": [
+   "examples/python/helloworld/helloworld_pb2.py",
+   "examples/python/helloworld/helloworld_pb2.pyi",
+   "examples/python/helloworld/helloworld_pb2_grpc.py"
+  ],
+  "source": "grpc.io Python quickstart codegen command; sparse checkout of examples/python/helloworld and examples/protos",
+  "committed": {
+   "examples/python/helloworld/helloworld_pb2.py": true,
+   "examples/python/helloworld/helloworld_pb2.pyi": true,
+   "examples/python/helloworld/helloworld_pb2_grpc.py": true
+  },
+  "committed_equals_regen": {
+   "examples/python/helloworld/helloworld_pb2.py": false,
+   "examples/python/helloworld/helloworld_pb2.pyi": true,
+   "examples/python/helloworld/helloworld_pb2_grpc.py": false
+  },
+  "noise_lines": {
+   "examples/python/helloworld/helloworld_pb2.py": 0,
+   "examples/python/helloworld/helloworld_pb2.pyi": 0,
+   "examples/python/helloworld/helloworld_pb2_grpc.py": 0
+  },
+  "n_declared": 1,
+  "sampled_declared": 1,
+  "declared_recall": "1/1",
+  "missed_declared": [],
+  "sampled_undeclared": 40,
+  "undeclared_flagged": {},
+  "declared_kinds": {
+   "examples/protos/helloworld.proto": "crash"
+  },
+  "regen_runs": 43,
+  "seconds": 2.3,
+  "out_precision": "3/3",
+  "out_recall": "3/3"
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "directed": true,
+ "multigraph": true,
+ "graph": {
+  "name": "pr1_user_region",
+  "commands": [
+   "make gen"
+  ],
+  "inference_seconds": 1.51,
+  "regen_runs": 15
+ },
+ "nodes": [
+  {
+   "id": "file:models/entities.py",
+   "kind": "file",
+   "path": "models/entities.py",
+   "role": "output",
+   "noisy_lines": 0
+  },
+  {
+   "id": "cmd:make gen",
+   "kind": "command",
+   "command": "make gen"
+  },
+  {
+   "id": "file:Makefile",
+   "kind": "file",
+   "path": "Makefile",
+   "role": "build"
+  },
+  {
+   "id": "file:model/entities.yaml",
+   "kind": "file",
+   "path": "model/entities.yaml",
+   "role": "input"
+  },
+  {
+   "id": "file:tools/gen_entities.py",
+   "kind": "file",
+   "path": "tools/gen_entities.py",
+   "role": "generator"
+  },
+  {
+   "id": "line:model/entities.yaml:4",
+   "kind": "line",
+   "path": "model/entities.yaml",
+   "line": 4,
+   "text": "- {name: sku, type: str}"
+  },
+  {
+   "id": "line:models/entities.py:8",
+   "kind": "line",
+   "path": "models/entities.py",
+   "line": 8
+  },
+  {
+   "id": "line:model/entities.yaml:5",
+   "kind": "line",
+   "path": "model/entities.yaml",
+   "line": 5,
+   "text": "- {name: price_cents, type: int}"
+  },
+  {
+   "id": "line:models/entities.py:9",
+   "kind": "line",
+   "path": "models/entities.py",
+   "line": 9
+  },
+  {
+   "id": "line:model/entities.yaml:6",
+   "kind": "line",
+   "path": "model/entities.yaml",
+   "line": 6,
+   "text": "- {name: currency, type: str, default: USD}"
+  },
+  {
+   "id": "line:models/entities.py:10",
+   "kind": "line",
+   "path": "models/entities.py",
+   "line": 10
+  },
+  {
+   "id": "line:model/entities.yaml:9",
+   "kind": "line",
+   "path": "model/entities.yaml",
+   "line": 9,
+   "text": "- {name: code, type: str}"
+  },
+  {
+   "id": "line:models/entities.py:20",
+   "kind": "line",
+   "path": "models/entities.py",
+   "line": 20
+  },
+  {
+   "id": "line:model/entities.yaml:10",
+   "kind": "line",
+   "path": "model/entities.yaml",
+   "line": 10,
+   "text": "- {name: percent_off, type: int}"
+  },
+  {
+   "id": "line:models/entities.py:21",
+   "kind": "line",
+   "path": "models/entities.py",
+   "line": 21
+  }
+ ],
+ "links": [
+  {
+   "source": "file:models/entities.py",
+   "target": "cmd:make gen",
+   "type": "produced_by"
+  },
+  {
+   "source": "file:models/entities.py",
+   "target": "file:Makefile",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:models/entities.py",
+   "target": "file:model/entities.yaml",
+   "type": "generated_from"
+  },
+  {
+   "source": "file:models/entities.py",
+   "target": "file:tools/gen_entities.py",
+   "type": "generated_from"
+  },
+  {
+   "source": "line:model/entities.yaml:4",
+   "target": "file:model/entities.yaml",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:8",
+   "target": "file:models/entities.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:8",
+   "target": "line:model/entities.yaml:4",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:model/entities.yaml:5",
+   "target": "file:model/entities.yaml",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:9",
+   "target": "file:models/entities.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:9",
+   "target": "line:model/entities.yaml:5",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:model/entities.yaml:6",
+   "target": "file:model/entities.yaml",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:10",
+   "target": "file:models/entities.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:10",
+   "target": "line:model/entities.yaml:6",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:model/entities.yaml:9",
+   "target": "file:model/entities.yaml",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:20",
+   "target": "file:models/entities.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:20",
+   "target": "line:model/entities.yaml:9",
+   "type": "derived_from"
+  },
+  {
+   "source": "line:model/entities.yaml:10",
+   "target": "file:model/entities.yaml",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:21",
+   "target": "file:models/entities.py",
+   "type": "part_of"
+  },
+  {
+   "source": "line:models/entities.py:21",
+   "target": "line:model/entities.yaml:10",
+   "type": "derived_from"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "jj3_template_slice",
+ "family": "jinja",
+ "split": "test",
+ "kind": "regen",
+ "fix_locus": "template",
+ "header": true,
+ "agents_md": true,
+ "issue": "The last feature listed in config/features.yaml (gift_cards) is never enabled; `flags.is_enabled('gift_cards')` is False. test_all_features fails. Please fix.",
+ "generated": [
+  "app/settings.py",
+  "app/flags.py"
+ ],
+ "sources": [
+  "config/settings.yaml",
+  "config/features.yaml",
+  "templates/settings.py.j2",
+  "templates/flags.py.j2"
+ ],
+ "generators": [
+  "tools/render.py"
+ ],
+ "ref_fix": {
+  "templates/flags.py.j2": [
+   [
+    "features[:-1]",
+    "features"
+   ]
+  ]
+ },
+ "gen_only_fix": {
+  "app/flags.py": [
+   [
+    "    \"beta_search\",",
+    "    \"beta_search\",\n    \"gift_cards\","
+   ]
+  ]
+ },
+ "gen_cmd": "make gen",
+ "test_hashes": {
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_flags.py": "4bb2dfa5c4d450a984a4dc4a14551ba719ef430ee74f9fa39dbc4bd7297879ad"
+ },
+ "build_files": [
+  "Makefile"
+ ],
+ "noise_lines": {
+  "app/settings.py": [],
+  "app/flags.py": []
+ }
+}
